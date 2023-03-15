@@ -1,8 +1,10 @@
 const Navbar = ({ children, className }: { children: JSX.Element | JSX.Element[], className?: string }) => {
   return (
-    <div className={`flex gap-[10%] aling-center h-fit justify-center ${className ?? ""}`}>
-      {children}
-    </div>
+    <header className="flex align-center justify-center">
+      <nav className={`flex w-[90%] aling-center h-fit justify-around ${className ?? ""}`}>
+        {children}
+      </nav>
+    </header>
   )
 }
 
