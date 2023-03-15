@@ -4,8 +4,11 @@ import homeIcon from '../assets/homeIcon.png'
 import aboutIcon from '../assets/aboutIcon.png'
 import projectsIcon from '../assets/projectsIcon.png'
 
-export const Page = ({ className, children }:
-  { className?: string, children: JSX.Element | JSX.Element[] }) => {
+interface PageProps {
+  className?: string;
+  children: JSX.Element | JSX.Element[];
+}
+export const Page = ({ className, children }: PageProps) => {
   return (
     <>
       <Navbar>
