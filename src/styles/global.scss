@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .page {
+    @apply flex flex-col w-[100vw] h-[100vh] p-5
+  }
+  .page__container {
+    @apply flex w-full h-full flex-col flex-grow
+  }
+}
