@@ -10,8 +10,8 @@ export const Page = ({ className, children }:
         <NavbarButton text="About" navPath="about" />
         <NavbarButton text="Projects" navPath="projects" />
       </Navbar>
-      <div className="page">
-        <div className='page__container'>
+      <div className="flex flex-col w-[100vw] h-[100vh] p-5">
+        <div className='flex w-full h-full flex-col flex-grow'>
           <div className={`flex w-full h-full ${className ?? ""}`} >
             {children}
           </div>
