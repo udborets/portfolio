@@ -1,16 +1,27 @@
-import Tech from "@/components/Tech"
-import { Page } from "@/templates/Page"
-import Image from "next/image"
-import avatar from '../assets/avatar.jpg'
+import { Page } from "@/templates/Page";
+import Image from "next/image";
+import avatar from '../assets/avatar.jpg';
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import githubIcon from "../assets/githubIcon.png";
+import telegramIcon from "../assets/telegramIcon.png";
+import vkIcon from "../assets/vkIcon.png";
+import LinkIcon from "@/components/LinkIcon";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: ["developer", "human", "programmer"],
+      strings: [
+        "18 y.o. dev from Russia",
+        "programmer",
+        "student",
+        "frontend developer",
+        "human",
+        "newbie developer",
+      ],
       typeSpeed: 60,
+      shuffle: true,
       backSpeed: 30,
       backDelay: 2000,
       loopCount: Infinity,
@@ -27,23 +38,28 @@ const Home = () => {
       <div className="flex">
         <Image priority src={avatar} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
         <div className="flex flex-col ml-[4rem]">
-          <span className="flex text-[3rem] text-white font-bold w-fit h-fit">YURY BORETS</span>
-          <div className="typewriter">
+          <span className="flex text-[3rem] text-white font-bold w-fit h-fit">Yury Borets</span>
+          <div className="typewriter w-[500px]">
             <span>{"I'm a "}</span>
             &nbsp;&nbsp;
             <span className="typewriter__text flex text-[2rem] font-bold w-fit h-fit" ref={typedRef} />
           </div>
-        </div>
-        {/* <div className="flex gap-[0.5rem] flex-col flex-wrap">
-          <div className="flex flex-row items-center justify-start text-[1.5rem] flex-wrap text-white">
-            In my projects I use:
-            <Tech iconClass="devicon-typescript-plain colored" text="TypeScript," />
-            <Tech iconClass="devicon-react-original colored" text="React," />
-            <Tech iconClass="devicon-nextjs-original" text="Next," />
-            <Tech iconClass="devicon-tailwindcss-plain colored" text="Tailwind," />
-            <Tech iconClass="devicon-redux-original colored" text="Redux" />
+          <div className="flex gap-8 items-center mt-5">
+            <LinkIcon alt="Github" link="https://github.com/udborets/" icon={githubIcon} />
+            <LinkIcon alt="Telegram" link="https://t.me/udborets" icon={telegramIcon} />
+            <LinkIcon alt="VK" link="https://vk.com/udborets" icon={vkIcon} />
           </div>
-        </div> */}
+        </div>
+        {/* <div className="flex gap-[0.5rem] flex-col flex-wrap"> */}
+        {/* <div className="flex flex-row items-center justify-start text-[1.5rem] flex-wrap text-white"> */}
+        {/* In my projects I use: */}
+        {/* <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript," /> */}
+        {/* <TechIcon iconClass="devicon-react-original colored" text="React," /> */}
+        {/* <TechIcon iconClass="devicon-nextjs-original" text="Next," /> */}
+        {/* <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind," /> */}
+        {/* <TechIcon iconClass="devicon-redux-original colored" text="Redux" /> */}
+        {/* </div> */}
+        {/* </div> */}
       </div>
     </Page>
   )
