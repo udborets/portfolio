@@ -15,7 +15,7 @@ export const Page = ({ className, children }:
       </Navbar>
       <main className="page flex flex-col w-full h-full p-5 bg-[#111111]">
         <div className='page-container flex h-full flex-col flex-grow'>
-          <div className={`content-wrapper flex flex-grow ${className ?? ""}`} >
+          <div className={`content-wrapper flex flex-grow flex-col h-full ${className ?? ""}`} >
             {children}
           </div>
         </div>
