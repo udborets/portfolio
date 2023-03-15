@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar"
 import NavbarButton from "@/components/UI/NavbarButton"
 
 export const Page = ({ className, children }:
-  { className?: string, children: JSX.Element }) => {
+  { className?: string, children: JSX.Element | JSX.Element[] }) => {
   return (
     <>
       <Navbar>
