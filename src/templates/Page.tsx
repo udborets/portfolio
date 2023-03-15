@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar"
 import NavbarButton from "@/components/UI/NavbarButton"
-import homeIcon from '../assets/homeIcon.png'
 import aboutIcon from '../assets/aboutIcon.png'
+import homeIcon from '../assets/homeIcon.png'
 import projectsIcon from '../assets/projectsIcon.png'
 
 interface PageProps {

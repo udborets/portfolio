@@ -1,5 +1,6 @@
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import Image, { StaticImageData } from "next/image"
+
 import { currentPage, updateCurrentPage } from "@/store/currentPage";
 
 interface NavbarButtonProps {
