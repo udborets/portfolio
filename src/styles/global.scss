@@ -6,15 +6,19 @@
 @import "index.scss";
 
 @layer components {
+  .text-blue {
+    @apply text-[#00BFFF];
+  }
+
   .typewriter {
     @apply text-white flex;
 
     .typewriter__text {
-      @apply text-[#00BFFF];
+      @apply text-blue;
     }
 
     .typed-cursor {
-      @apply text-[#00BFFF];
+      @apply text-blue;
     }
 
     span {
@@ -24,7 +28,7 @@
 
   .dev-icon-effect {
     transform: scale(1);
-    transition: transform 1s ease-out; 
+    transition: transform 1s ease-out;
 
     &:hover {
       transform: scale(1.1);
