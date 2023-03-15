@@ -17,9 +17,9 @@ const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
       <Link
         href={navPath}
         onClick={() => updateCurrentPage(navPath)}
-        className={`w-full text-[1rem] items-center flex gap-[0.5rem] 
+        className={`w-full text-[1rem] items-center flex gap-[0.5rem] font-bold 
         ${selectedPage.value === navPath ? "text-sky" :
-            "text-white hover:tracking-[0.08rem] transition-all duration-[0.5s] ease-out"} ${className ?? ""}`}
+            "text-white hover:tracking-[0.12rem] transition-all duration-[0.3s] ease-out"} ${className ?? ""}`}
       >
         <Image
           src={img}
