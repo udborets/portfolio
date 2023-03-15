@@ -1,10 +1,17 @@
-import { Page } from "@/templates/Page"
+import Head from "next/head";
+
+import { Page } from "@/templates/Page";
 
 const Projects = () => {
   return (
-    <Page>
-      <div>projects page</div>
-    </Page>
+    <>
+      <Head>
+        <title>udborets/projects</title>
+      </Head>
+      <Page>
+        <div>projects page</div>
+      </Page>
+    </>
   )
 }
 
