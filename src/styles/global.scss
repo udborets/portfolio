@@ -6,24 +6,5 @@
 @import "index.scss";
 
 @layer components {
-  .typewriter {
-    @apply border-r-2 whitespace-nowrap overflow-hidden w-full tracking-[5px];
-    animation: typing 2s, cursor 0.4s step-end infinite alternate;
-  }
 
-  @keyframes cursor {
-    50% {
-      border-color: transparent;
-    }
-  }
-
-  @keyframes typing {
-    from {
-      width: 0%;
-    }
-
-    to {
-      width: 100%;
-    }
-  }
 }
