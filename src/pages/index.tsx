@@ -1,5 +1,4 @@
 import { Page } from "@/templates/Page"
-import { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from "next"
 
 const Home = () => {
   return (
