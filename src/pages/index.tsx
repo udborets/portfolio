@@ -5,14 +5,14 @@ const Home = () => {
   return (
     <Page className="items-center justify-center">
       <div className="flex flex-col gap-[1.5rem]">
-        <span className="text-[3rem] w-fit">
+        <span className="text-[3rem] w-fit text-white">
           Hi, my name is Yura,
         </span>
-        <span className="text-[2rem] w-fit">
+        <span className="text-[2rem] w-fit text-white">
           and I am a frontend developer!
         </span>
         <div className="flex gap-[0.5rem] flex-col flex-wrap">
-          <div className="flex flex-row align-center justify-start text-[1.5rem] flex-wrap">
+          <div className="flex flex-row align-center justify-start text-[1.5rem] flex-wrap text-white">
             In my projects I use:
             <Tech iconClass="devicon-typescript-plain colored" text="TypeScript," />
             <Tech iconClass="devicon-react-original colored" text="React," />
