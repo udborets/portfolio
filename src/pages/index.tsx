@@ -7,21 +7,22 @@ import githubIcon from "../assets/githubIcon.png";
 import telegramIcon from "../assets/telegramIcon.png";
 import vkIcon from "../assets/vkIcon.png";
 import LinkIcon from "@/components/LinkIcon";
+import LinkIconRow from "@/components/LinkIconRow";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
+  const typedArray = [
+    "18 y.o. dev from Russia",
+    "programmer",
+    "frontend developer",
+    "student",
+    "human",
+    "newbie developer",
+  ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
-      strings: [
-        "18 y.o. dev from Russia",
-        "programmer",
-        "student",
-        "frontend developer",
-        "human",
-        "newbie developer",
-      ],
+      strings: typedArray,
       typeSpeed: 60,
-      shuffle: true,
       backSpeed: 30,
       backDelay: 2000,
       loopCount: Infinity,
@@ -44,11 +45,11 @@ const Home = () => {
             &nbsp;&nbsp;
             <span className="typewriter__text flex text-[2rem] font-bold w-fit h-fit" ref={typedRef} />
           </div>
-          <div className="flex gap-8 items-center mt-5">
+          <LinkIconRow>
             <LinkIcon alt="Github" link="https://github.com/udborets/" icon={githubIcon} />
             <LinkIcon alt="Telegram" link="https://t.me/udborets" icon={telegramIcon} />
             <LinkIcon alt="VK" link="https://vk.com/udborets" icon={vkIcon} />
-          </div>
+          </LinkIconRow>
         </div>
         {/* <div className="flex gap-[0.5rem] flex-col flex-wrap"> */}
         {/* <div className="flex flex-row items-center justify-start text-[1.5rem] flex-wrap text-white"> */}
