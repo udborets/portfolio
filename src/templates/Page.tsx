@@ -10,9 +10,9 @@ export const Page = ({ className, children }:
         <NavbarButton text="About" navPath="about" />
         <NavbarButton text="Projects" navPath="projects" />
       </Navbar>
-      <div className="flex flex-col h-[100vh] p-5">
-        <div className='flex w-full h-full flex-col flex-grow'>
-          <div className={`flex w-full h-full ${className ?? ""}`} >
+      <div className="page flex flex-col w-full h-full p-5">
+        <div className='page-container flex h-full flex-col flex-grow'>
+          <div className={`content-wrapper flex flex-grow ${className ?? ""}`} >
             {children}
           </div>
         </div>
