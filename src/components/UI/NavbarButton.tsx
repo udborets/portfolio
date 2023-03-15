@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const NavbarButton = ({ text, navPath }: { text: string; navPath: string }) => {
   return (
-    <div className="bg-black p-2 bg-opacity-0 hover:bg-opacity-[10%] transition-all duration-[0.8s] ease-out flex">
-      <Link href={navPath} className="text-black text-[2rem]">{text}</Link>
+    <div className="bg-white p-2 bg-opacity-0 flex w-full">
+      <Link href={navPath} className="text-white w-full text-[2rem] hover:tracking-[0.1rem] transition-all duration-[0.5s] ease-out">{text}</Link>
     </div>
   )
 }
