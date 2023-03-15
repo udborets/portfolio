@@ -1,7 +1,7 @@
 import Tech from "@/components/Tech"
 import { Page } from "@/templates/Page"
 import Image from "next/image"
-import photo from '../assets/photo.jpg'
+import avatar from '../assets/avatar.jpg'
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <Page className="items-center justify-center">
       <div className="flex">
-        <Image src={photo} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
+        <Image priority src={avatar} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
         <div className="flex flex-col ml-[4rem]">
           <span className="flex text-[3rem] text-white font-bold w-fit h-fit">YURY BORETS</span>
           <div className="typewriter">
