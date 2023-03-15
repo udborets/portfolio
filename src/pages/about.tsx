@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>udborets/about</title>
+        <title>about</title>
       </Head>
       <Page>
         <div>about page</div>
