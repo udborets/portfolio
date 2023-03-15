@@ -21,4 +21,13 @@
       @apply h-full text-white flex justify-center items-center text-[2rem];
     }
   }
+
+  .dev-icon-effect {
+    transform: scale(1);
+    transition: transform 1s ease-out; 
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
