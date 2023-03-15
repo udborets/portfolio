@@ -10,6 +10,10 @@
     @apply text-[#00BFFF];
   }
 
+  .main-bg {
+    @apply bg-[#111111];
+  }
+
   .typewriter {
     @apply text-white flex;
 
