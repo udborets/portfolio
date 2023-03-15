@@ -1,6 +1,6 @@
-const Navbar = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
+const Navbar = ({ children, className }: { children: JSX.Element | JSX.Element[], className?: string }) => {
   return (
-    <div className='flex gap-2'>
+    <div className={`flex gap-[10%] aling-center justify-center ${className ?? ""}`}>
       {children}
     </div>
   )
