@@ -1,7 +1,11 @@
+import { Page } from "@/templates/Page"
 
-export const Home= () => {
+const Home = () => {
   return (
-    <>
-    </>
+    <Page className="items-center justify-center">
+      <div>Home page</div>
+    </Page>
   )
 }
+
+export default Home
