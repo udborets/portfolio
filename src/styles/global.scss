@@ -6,7 +6,7 @@
 @import "index.scss";
 
 @layer components {
-  .text-blue {
+  .text-sky {
     @apply text-[#00BFFF];
   }
 
@@ -14,11 +14,11 @@
     @apply text-white flex;
 
     .typewriter__text {
-      @apply text-blue;
+      @apply text-sky;
     }
 
     .typed-cursor {
-      @apply text-blue;
+      @apply text-sky;
     }
 
     span {
