@@ -6,5 +6,19 @@
 @import "index.scss";
 
 @layer components {
+  .typewriter {
+    @apply text-white flex;
 
+    .typewriter__text {
+      @apply text-[#00BFFF];
+    }
+
+    .typed-cursor {
+      @apply text-[#00BFFF];
+    }
+
+    span {
+      @apply h-full text-white flex justify-center items-center text-[2rem];
+    }
+  }
 }
