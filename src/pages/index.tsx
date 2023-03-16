@@ -9,6 +9,7 @@ import githubIcon from "../assets/githubIcon.png";
 import telegramIcon from "../assets/telegramIcon.png";
 import vkIcon from "../assets/vkIcon.png";
 import avatarStyles from "../styles/avatar.module.scss";
+import Link from "next/link";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
@@ -47,7 +48,7 @@ const Home = () => {
               <div className={avatarStyles["spin-container"]}>
                 <div className={avatarStyles.shape}>
                   <div className={avatarStyles.bd}>
-                    <div className={avatarStyles.blur}></div>
+                    <Link className={avatarStyles.blur} href="/about"></Link>
                   </div>
                 </div>
               </div>
