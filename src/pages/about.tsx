@@ -1,4 +1,4 @@
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -14,29 +14,29 @@ const About = () => {
       <Head>
         <title>/about</title>
       </Head>
-      <Page className="flex items-center justify-center gap-[50px]">
+      <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
         <div className="about-bio w-[90%] flex flex-col gap-[20px] mt-[170px]">
           <AboutParagraph
-            transitionDelay={1}
-            transitionDuration={1}
+            transitionDelay={0}
+            transitionDuration={0.5}
           >
             My name is Yury, I&apos;m 18 year old
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={2}
-            transitionDuration={1}
+            transitionDelay={1}
+            transitionDuration={0.5}
           >
             I started my frontend career in the very beginning of 2023
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={3}
-            transitionDuration={1}
+            transitionDelay={2}
+            transitionDuration={0.5}
           >
             I love learning new technologies and exploring frameworks
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={4}
-            transitionDuration={1}
+            transitionDelay={3}
+            transitionDuration={0.5}
           >
             I speak English and Russian, and currently I&apos;m learning Dutch
           </AboutParagraph>
@@ -45,7 +45,7 @@ const About = () => {
           className="flex gap-[0.5rem] flex-col flex-wrap items-center"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
+          transition={{ duration: 2, ease: "easeInOut", delay: 4 }}>
           <span className="text-[1.5rem] w-fit text-white mb-4">
             My favorite technologies that I use in projects
           </span>
@@ -76,7 +76,7 @@ const About = () => {
               : <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeIn" }}
+                transition={{ duration: 1, ease: "easeOut" }}
                 className="flex px-[40px] flex-col items-center align-center text-[1.5rem] mt-[1.5rem] w-full h-full text-white "
               >
                 I also use
