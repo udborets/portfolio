@@ -46,7 +46,9 @@ const Home = () => {
             <div className={avatarStyles.box}>
               <div className={avatarStyles["spin-container"]}>
                 <div className={avatarStyles.shape}>
-                  <div className={avatarStyles.bd}></div>
+                  <div className={avatarStyles.bd}>
+                    <div className={avatarStyles.blur}></div>
+                  </div>
                 </div>
               </div>
             </div>
