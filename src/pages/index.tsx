@@ -13,10 +13,10 @@ import vkIcon from "../assets/vkIcon.png";
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
   const typedArray = [
-    "18 y.o. dev from Russia",
+    "18 y.o. developer",
     "programmer",
     "frontend developer",
-    "Russian university student",
+    "first-year university student",
   ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
