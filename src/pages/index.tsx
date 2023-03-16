@@ -29,6 +29,7 @@ const Home = () => {
       loop: true,
       showCursor: true,
       cursorChar: '|',
+      startDelay: 1000,
     })
     return () => {
       typed.destroy();
@@ -42,15 +43,15 @@ const Home = () => {
       <Page className="items-center justify-center">
         <div className="flex flex-wrap items-center justify-center">
           <Image priority src={avatar} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
-          <div className="flex flex-col items-center justify-center w-[800px]">
+          <div className="flex flex-col items-center justify-center w-[600px]">
             <span className="flex text-[4rem] text-white font-bold w-fit h-fit">Yury Borets</span>
             <div className="typewriter w-full justify-center">
               <span className="typewriter__text flex text-[2rem] w-fit font-bold h-fit" ref={typedRef} />
             </div>
             <LinkIconRow>
-              <LinkIcon alt="Github" link="https://github.com/udborets/" icon={githubIcon} />
-              <LinkIcon alt="Telegram" link="https://t.me/udborets" icon={telegramIcon} />
-              <LinkIcon alt="VK" link="https://vk.com/udborets" icon={vkIcon} />
+              <LinkIcon index={50 * 1} alt="Github" link="https://github.com/udborets/" icon={githubIcon} />
+              <LinkIcon index={50 * 2} alt="Telegram" link="https://t.me/udborets" icon={telegramIcon} />
+              <LinkIcon index={50 * 3} alt="VK" link="https://vk.com/udborets" icon={vkIcon} />
             </LinkIconRow>
           </div>
           {/* <div className="flex gap-[0.5rem] flex-col flex-wrap"> */}
