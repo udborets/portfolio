@@ -13,13 +13,13 @@ interface NavbarButtonProps {
 const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
   const selectedPage = currentPage;
   return (
-    <div className="p-2 bg-opacity-0 w-full">
+    <li className="p-2 bg-opacity-0 w-full">
       <Link
         href={navPath}
         onClick={() => updateCurrentPage(navPath)}
         className={`w-full text-[1rem] items-center flex gap-[0.5rem] font-bold 
-        ${selectedPage.value === navPath ? "text-sky" :
-            "text-white hover:tracking-[0.12rem] transition-all duration-[0.3s] ease-out"} ${className ?? ""}`}
+        ${selectedPage.value === navPath ? "text-sky tracking-[0.12rem]" :
+            "text-white hover:tracking-[0.12rem] transition-all duration-[.5s] ease-out"} ${className ?? ""}`}
       >
         <Image
           src={img}
@@ -28,7 +28,7 @@ const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
         />
         {text}
       </Link>
-    </div>
+    </li>
   )
 }
 
