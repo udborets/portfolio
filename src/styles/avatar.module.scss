@@ -58,9 +58,27 @@
   width: 100%;
   transition: all 0.3s ease-out;
 
+  &::before {
+    content: "visit about page";
+    font-size: 1rem;
+    color: white;
+    text-transform: lowercase;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s
+  }
+
   &:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.596);
     backdrop-filter: blur(8px);
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
