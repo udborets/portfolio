@@ -10,12 +10,12 @@ import "@/styles/global.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div id="root" className="app-wrapper flex-col xl:flex-row">
+    <>
       <Navbar>
         <NavbarButton text='Home' navPath='/' img={homeIcon} imgActive={homeIconActive} />
         <NavbarButton text="About" navPath="/about" img={aboutIcon} imgActive={aboutIconActive} />
       </Navbar>
       <Component {...pageProps} />
-    </div>
+    </>
   )
 }
