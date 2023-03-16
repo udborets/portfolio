@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
-import styles from "../../styles/components/UI/LinkIcon.module.scss";
+import styles from "@/styles/components/UI/LinkIcon.module.scss";
 
 interface LinkIconProps {
   icon: string | StaticImageData;
