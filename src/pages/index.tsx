@@ -42,7 +42,7 @@ const Home = () => {
         <title>udborets</title>
       </Head>
       <Page className="items-center justify-center">
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="flex flex-wrap items-center justify-center flex-col xl:flex-row">
           <div className={avatarStyles.container}>
             <div className={avatarStyles.box}>
               <div className={avatarStyles["spin-container"]}>
