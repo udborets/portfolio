@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>projects</title>
+        <title>/projects</title>
       </Head>
       <Page>
         <div>projects page</div>
