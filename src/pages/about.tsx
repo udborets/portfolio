@@ -17,25 +17,25 @@ const About = () => {
       <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
         <div className="about-bio w-[90%] flex flex-col gap-[20px] mt-[170px]">
           <AboutParagraph
-            transitionDelay={0}
+            transitionDelay={1}
             transitionDuration={0.5}
           >
             My name is Yury, I&apos;m 18 year old
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={1}
+            transitionDelay={2}
             transitionDuration={0.5}
           >
             I started my frontend career in the very beginning of 2023
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={2}
+            transitionDelay={3}
             transitionDuration={0.5}
           >
             I love learning new technologies and exploring frameworks
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={3}
+            transitionDelay={4}
             transitionDuration={0.5}
           >
             I speak English and Russian, and currently I&apos;m learning Dutch
@@ -45,7 +45,7 @@ const About = () => {
           className="flex gap-[0.5rem] flex-col flex-wrap items-center"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 4 }}>
+          transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
           <span className="text-[1.5rem] w-fit text-white mb-4">
             My favorite technologies that I use in projects
           </span>
