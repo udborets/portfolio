@@ -80,7 +80,7 @@ const About = () => {
                 className="flex px-[40px] flex-col items-center align-center text-[1.5rem] mt-[1.5rem] w-full h-full text-white "
               >
                 I also use
-                <span className={textPulse["textPulse"] + " text-[1rem]"}>hover me</span>
+                <span className={textPulse["textPulse"] + " text-[1rem]"}>hover</span>
               </m.div>
             }
           </div>
