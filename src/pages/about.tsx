@@ -47,7 +47,7 @@ const About = () => {
           animate={{ translateY: "0%", opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
           <span className="text-[1.5rem] w-fit text-white mb-4">
-            In my projects I use
+            In my projects I love to use
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
             <TechIcon iconClass="devicon-react-original colored" text="React" />
