@@ -18,8 +18,6 @@ const Home = () => {
     "programmer",
     "frontend developer",
     "student",
-    "human",
-    "newbie developer",
   ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
@@ -44,10 +42,9 @@ const Home = () => {
       <Page className="items-center justify-center">
         <div className="flex flex-wrap items-center justify-center">
           <Image priority src={avatar} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
-          <div className="flex flex-col items-center justify-center w-[700px]">
-            <span className="flex text-[3rem] text-white font-bold w-fit h-fit">Yury Borets</span>
-            <div className="typewriter w-full">
-              <span className="ml-[170px]">{"I'm a"}&nbsp;</span>
+          <div className="flex flex-col items-center justify-center w-[800px]">
+            <span className="flex text-[4rem] text-white font-bold w-fit h-fit">Yury Borets</span>
+            <div className="typewriter w-full justify-center">
               <span className="typewriter__text flex text-[2rem] w-fit font-bold h-fit" ref={typedRef} />
             </div>
             <LinkIconRow>
