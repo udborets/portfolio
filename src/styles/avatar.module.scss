@@ -53,6 +53,17 @@
   z-index: 2;
 }
 
+.blur {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+}
+
 @keyframes morph {
   0% {
     border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
