@@ -20,25 +20,25 @@ const About = () => {
             transitionDelay={1}
             transitionDuration={1}
           >
-            My name is Yura, I&apos;m 18 year old, I was born in Russia and I live there to this day.
+            My name is Yury, I&apos;m 18 year old
           </AboutParagraph>
           <AboutParagraph
             transitionDelay={2}
             transitionDuration={1}
           >
-            I started my frontend career in the very beginning of 2023.
+            I started my frontend career in the very beginning of 2023
           </AboutParagraph>
           <AboutParagraph
             transitionDelay={3}
             transitionDuration={1}
           >
-            I love learning new technologies and exploring frameworks.
+            I love learning new technologies and exploring frameworks
           </AboutParagraph>
           <AboutParagraph
             transitionDelay={4}
             transitionDuration={1}
           >
-            I speak Russian and English languages, and currently I&apos;m learning Dutch
+            I speak English and Russian, and currently I&apos;m learning Dutch
           </AboutParagraph>
         </div>
         <m.div
@@ -47,7 +47,7 @@ const About = () => {
           animate={{ translateY: "0%", opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
           <span className="text-[1.5rem] w-fit text-white mb-4">
-            In my projects I love to use
+            My favorite technologies that I use in projects
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
             <TechIcon iconClass="devicon-react-original colored" text="React" />
@@ -61,7 +61,7 @@ const About = () => {
             onMouseLeave={() => setIsAlsoVisible(false)}
           >
             {isAlsoVisible
-              ? <m.div
+              ? <m.section
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
@@ -72,15 +72,16 @@ const About = () => {
                 <TechIcon iconClass="devicon-express-original" text="Express" />
                 <TechIcon iconClass="devicon-javascript-plain colored" text="JavaScript" />
                 <TechIcon iconClass="devicon-postgresql-plain colored" text="PostgreSQL" />
-              </m.div>
-              : <m.span
+              </m.section>
+              : <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeIn" }}
-                className={"flex px-[40px] items-center align-center text-[1.5rem] w-full h-full text-white " + textPulse["textPulse"]}
+                className="flex px-[40px] flex-col items-center align-center text-[1.5rem] mt-[1.5rem] w-full h-full text-white "
               >
-                I&apos;m also familiar with
-              </m.span>
+                I also use
+                <span className={textPulse["textPulse"] + " text-[1rem]"}>hover me</span>
+              </m.div>
             }
           </div>
         </m.div>
