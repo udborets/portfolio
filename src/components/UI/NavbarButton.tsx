@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-import { currentPage, updateCurrentPage } from "@/store/currentPage";
+import useCurrentPage from "@/hooks/useCurrentPage";
 
 interface NavbarButtonProps {
   text: string;
@@ -11,14 +11,14 @@ interface NavbarButtonProps {
 }
 
 const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
-  const selectedPage = currentPage;
+  const { currentPage, updateCurrentPage } = useCurrentPage();
   return (
     <li className="p-2 bg-opacity-0 w-full">
       <Link
         href={navPath}
         onClick={() => updateCurrentPage(navPath)}
         className={`w-full text-[1rem] items-center flex gap-[0.5rem] font-bold 
-        ${selectedPage.value === navPath ? "text-sky tracking-[0.12rem]" :
+        ${currentPage.value === navPath ? "text-sky tracking-[0.12rem]" :
             "text-white hover:tracking-[0.12rem] transition-all duration-[.5s] ease-out"} ${className ?? ""}`}
       >
         <Image
