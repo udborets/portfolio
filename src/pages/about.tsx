@@ -2,10 +2,10 @@ import { motion as m } from "framer-motion";
 import Head from "next/head";
 import { useState } from "react";
 
-import textPulse from "@/styles/textPulse.module.scss";
-import TechIcon from "@/components/UI/TechIcon";
-import { Page } from "@/templates/Page";
 import AboutParagraph from "@/components/AboutParagraph";
+import TechIcon from "@/components/UI/TechIcon";
+import textPulse from "@/styles/textPulse.module.scss";
+import { Page } from "@/templates/Page";
 
 const About = () => {
   const [isAlsoVisible, setIsAlsoVisible] = useState<boolean>(false);

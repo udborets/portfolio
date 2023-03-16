@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
 import { signal } from "@preact/signals";
+import { useRouter } from "next/router";
 
 const useCurrentPage = () => {
   const { asPath } = useRouter();

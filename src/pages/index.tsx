@@ -2,13 +2,13 @@ import Head from "next/head";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-import LinkIcon from "@/components/UI/LinkIcon";
 import LinkIconRow from "@/components/LinkIconRow";
+import LinkIcon from "@/components/UI/LinkIcon";
 import { Page } from "@/templates/Page";
-import avatarStyles from "../styles/avatar.module.scss"
 import githubIcon from "../assets/githubIcon.png";
 import telegramIcon from "../assets/telegramIcon.png";
 import vkIcon from "../assets/vkIcon.png";
+import avatarStyles from "../styles/avatar.module.scss";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
