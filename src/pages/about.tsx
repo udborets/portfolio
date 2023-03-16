@@ -69,8 +69,9 @@ const About = () => {
               >
                 <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
                 <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
+                <TechIcon iconClass="devicon-firebase-plain colored" text="Firebase" />
                 <TechIcon iconClass="devicon-express-original" text="Express" />
-                <TechIcon iconClass="devicon-javascript-plain colored" text="JavaScript" />
+                <TechIcon iconClass="devicon-nodejs-plain colored" text="NodeJS" />
                 <TechIcon iconClass="devicon-postgresql-plain colored" text="PostgreSQL" />
               </m.section>
               : <m.div
