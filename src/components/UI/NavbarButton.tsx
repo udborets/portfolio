@@ -13,7 +13,7 @@ interface NavbarButtonProps {
 const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
   const selectedPage = currentPage;
   return (
-    <div className="p-2 bg-opacity-0 w-full">
+    <li className="p-2 bg-opacity-0 w-full">
       <Link
         href={navPath}
         onClick={() => updateCurrentPage(navPath)}
@@ -28,7 +28,7 @@ const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
         />
         {text}
       </Link>
-    </div>
+    </li>
   )
 }
 
