@@ -15,7 +15,7 @@ const About = () => {
         <title>/about</title>
       </Head>
       <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
-        <div className="about-bio w-[90%] flex flex-col gap-[20px] mt-[170px]">
+        <div className="about-bio w-[90%] flex flex-col gap-[20px]">
           <AboutParagraph
             transitionDelay={1}
             transitionDuration={0.5}
@@ -65,7 +65,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="flex flex-row items-center justify-center w-full flex-wrap text-white"
+                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-[500px]"
               >
                 <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
                 <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
