@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>/about</title>
+        <title>udborets/about</title>
       </Head>
       <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
         <div className="about-bio w-[90%] flex flex-col gap-[20px]">
