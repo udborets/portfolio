@@ -5,10 +5,10 @@ import Typed from "typed.js";
 import LinkIconRow from "@/components/LinkIconRow";
 import LinkIcon from "@/components/UI/LinkIcon";
 import { Page } from "@/templates/Page";
-import githubIcon from "../assets/githubIcon.png";
-import telegramIcon from "../assets/telegramIcon.png";
-import vkIcon from "../assets/vkIcon.png";
-import avatarStyles from "../styles/avatar.module.scss";
+import githubIcon from "@/assets/githubIcon.png";
+import telegramIcon from "@/assets/telegramIcon.png";
+import vkIcon from "@/assets/vkIcon.png";
+import avatarStyles from "@/styles/avatar.module.scss";
 import Link from "next/link";
 
 const Home = () => {
