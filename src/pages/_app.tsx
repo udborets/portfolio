@@ -1,10 +1,11 @@
-import Navbar from "@/components/Navbar"
-import NavbarButton from "@/components/UI/NavbarButton"
-import aboutIcon from '../assets/aboutIcon.png'
-import homeIcon from '../assets/homeIcon.png'
-import projectsIcon from '../assets/projectsIcon.png'
-import type { AppProps } from 'next/app'
-import "../styles/global.scss";
+import type { AppProps } from 'next/app';
+
+import aboutIcon from '@/assets/aboutIcon.png';
+import homeIcon from '@/assets/homeIcon.png';
+import projectsIcon from '@/assets/projectsIcon.png';
+import Navbar from "@/components/Navbar";
+import NavbarButton from "@/components/UI/NavbarButton";
+import "@/styles/global.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
