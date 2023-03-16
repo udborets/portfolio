@@ -7,23 +7,24 @@ interface NavbarButtonProps {
   text: string;
   navPath: string;
   img: StaticImageData;
+  imgActive: StaticImageData;
   className?: string;
 }
 
-const NavbarButton = ({ text, navPath, img, className }: NavbarButtonProps) => {
+const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButtonProps) => {
   const { currentPage, updateCurrentPage } = useCurrentPage();
   return (
     <li className="p-2 bg-opacity-0 w-full">
       <Link
         href={navPath}
         onClick={() => updateCurrentPage(navPath)}
-        className={`w-full text-[1rem] items-center flex gap-[0.5rem] font-bold 
+        className={`w-full text-[1.2rem] items-center flex gap-[0.5rem] font-bold 
         ${currentPage.value === navPath ? "text-sky" :
             "text-white hover:tracking-[0.12rem]"} transition-all duration-[.5s] ease-out ${className ?? ""}`}
       >
         <Image
-          src={img}
-          className="w-[15px] h-[15px] flex"
+          src={currentPage.value === navPath ? imgActive : img}
+          className="w-[29px] h-[29px] flex"
           alt="*"
         />
         {text}
