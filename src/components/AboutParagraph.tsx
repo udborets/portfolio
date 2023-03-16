@@ -10,7 +10,7 @@ const AboutParagraph = ({ children: text, transitionDuration, transitionDelay }:
   return (
     <m.p
       className="text-[1.5rem] text-white w-full text-center"
-      initial={{ translateY: "-20%", opacity: 0 }}
+      initial={{ translateY: "-100%", opacity: 0 }}
       animate={{ translateY: "0%", opacity: 1 }}
       transition={{ duration: transitionDuration, ease: "easeOut", delay: transitionDelay }}>
       {text}
