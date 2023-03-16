@@ -34,12 +34,18 @@ const About = () => {
           >
             I love learning new technologies and exploring frameworks.
           </AboutParagraph>
+          <AboutParagraph
+            transitionDelay={4}
+            transitionDuration={1}
+          >
+            I speak Russian and English languages, and currently I&apos;m learning Dutch
+          </AboutParagraph>
         </div>
         <m.div
           className="flex gap-[0.5rem] flex-col flex-wrap items-center"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 4 }}>
+          transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
           <span className="text-[1.5rem] w-fit text-white mb-4">
             In my projects I use
           </span>
