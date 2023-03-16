@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Navbar>
         <NavbarButton text='Home' navPath='/' img={homeIcon} />
-        <NavbarButton text="About" navPath="about" img={aboutIcon} />
-        <NavbarButton text="Projects" navPath="projects" img={projectsIcon} />
+        <NavbarButton text="About" navPath="/about" img={aboutIcon} />
+        <NavbarButton text="Projects" navPath="/projects" img={projectsIcon} />
       </Navbar>
       <Component {...pageProps} />
     </>
