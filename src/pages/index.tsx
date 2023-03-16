@@ -17,7 +17,7 @@ const Home = () => {
     "18 y.o. dev from Russia",
     "programmer",
     "frontend developer",
-    "student",
+    "Russian university student",
   ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
