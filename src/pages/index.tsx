@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-import LinkIcon from "@/components/LinkIcon";
+import LinkIcon from "@/components/UI/LinkIcon";
 import LinkIconRow from "@/components/LinkIconRow";
 import { Page } from "@/templates/Page";
 import avatar from '../assets/avatar.jpg';
