@@ -61,16 +61,6 @@ const Home = () => {
               <LinkIcon index={50 * 3} alt="VK" link="https://vk.com/udborets" icon={vkIcon} />
             </LinkIconRow>
           </div>
-          {/* <div className="flex gap-[0.5rem] flex-col flex-wrap"> */}
-          {/* <div className="flex flex-row items-center justify-start text-[1.5rem] flex-wrap text-white"> */}
-          {/* In my projects I use: */}
-          {/* <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript," /> */}
-          {/* <TechIcon iconClass="devicon-react-original colored" text="React," /> */}
-          {/* <TechIcon iconClass="devicon-nextjs-original" text="Next," /> */}
-          {/* <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind," /> */}
-          {/* <TechIcon iconClass="devicon-redux-original colored" text="Redux" /> */}
-          {/* </div> */}
-          {/* </div> */}
         </div>
       </Page>
     </>
