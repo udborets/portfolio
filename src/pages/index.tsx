@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 import LinkIcon from "@/components/UI/LinkIcon";
 import LinkIconRow from "@/components/LinkIconRow";
 import { Page } from "@/templates/Page";
-import avatar from '../assets/avatar.jpg';
+import avatarStyles from "../styles/avatar.module.scss"
 import githubIcon from "../assets/githubIcon.png";
 import telegramIcon from "../assets/telegramIcon.png";
 import vkIcon from "../assets/vkIcon.png";
@@ -42,7 +41,15 @@ const Home = () => {
       </Head>
       <Page className="items-center justify-center">
         <div className="flex flex-wrap items-center justify-center">
-          <Image priority src={avatar} alt="portrait" className="w-[250px] h-[250px] rounded-[50%]" />
+          <div className={avatarStyles.container}>
+            <div className={avatarStyles.box}>
+              <div className={avatarStyles["spin-container"]}>
+                <div className={avatarStyles.shape}>
+                  <div className={avatarStyles.bd}></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col items-center justify-center w-[600px]">
             <span className="flex text-[4rem] text-white font-bold w-fit h-fit">Yury Borets</span>
             <div className="typewriter w-full justify-center">
