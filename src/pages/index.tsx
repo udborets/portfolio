@@ -13,8 +13,9 @@ import avatarStyles from "../styles/avatar.module.scss";
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
   const typedArray = [
-    "18 y.o. developer",
+    "18 y.o. dev",
     "programmer",
+    "web dev newbie",
     "frontend developer",
     "first-year university student",
   ].sort(() => Math.random() - 0.5);
