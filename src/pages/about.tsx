@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion";
+import { AnimatePresence, motion as m } from "framer-motion";
 import Head from "next/head";
 import { useState } from "react";
 
@@ -44,41 +44,39 @@ const About = () => {
             In my projects I use
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
-            <TechIcon iconClass="devicon-react-original colored" text="React," />
-            <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript," />
-            <TechIcon iconClass="devicon-nextjs-original" text="Next," />
-            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind," />
+            <TechIcon iconClass="devicon-react-original colored" text="React" />
+            <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript" />
+            <TechIcon iconClass="devicon-nextjs-original" text="Next" />
+            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
           </div>
-        </m.div>
-        <m.div
-          className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max h-[100px]"
-          initial={{ translateY: "-20%", opacity: 0 }}
-          animate={{ translateY: "0%", opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 4 }}
-          onMouseEnter={() => setIsAlsoVisible(true)}
-          onMouseLeave={() => setIsAlsoVisible(false)}
-        >
-          {isAlsoVisible
-            ?
-            <m.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut" }}
-              className="flex flex-row items-center justify-center w-full flex-wrap text-white">
-              <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
-              <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
-              <TechIcon iconClass="devicon-express-original" text="Express" />
-            </m.div>
-            :
-            <m.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2, ease: "easeInOut" }}
-              className={"text-[1.5rem] w-fit text-white p-[1rem] " + textPulse["textPulse"]}
-            >
-              {"I'm also familiar with"}
-            </m.span>
-          }
+          <div
+            className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max h-[100px]"
+            onMouseEnter={() => setIsAlsoVisible(true)}
+            onMouseLeave={() => setIsAlsoVisible(false)}
+          >
+            {isAlsoVisible
+              ? <m.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="flex flex-row items-center justify-center w-full flex-wrap text-white"
+              >
+                <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
+                <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
+                <TechIcon iconClass="devicon-express-original" text="Express" />
+                <TechIcon iconClass="devicon-javascript-plain colored" text="JavaScript" />
+                <TechIcon iconClass="devicon-postgresql-plain colored" text="PostgreSQL" />
+              </m.div>
+              : <m.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className={"flex px-[40px] items-center align-center text-[1.5rem] w-full h-full text-white " + textPulse["textPulse"]}
+              >
+                I&apos;m also familiar with
+              </m.span>
+            }
+          </div>
         </m.div>
       </Page>
     </>
