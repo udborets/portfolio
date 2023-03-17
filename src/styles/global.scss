@@ -12,7 +12,7 @@
 
   html,
   body {
-    @apply h-full w-full main-bg;
+    @apply h-full w-full main-bg min-w-[600px] min-h-full;
   }
 
   .text-sky {
