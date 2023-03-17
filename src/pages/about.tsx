@@ -12,6 +12,8 @@ const About = () => {
   return (
     <>
       <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
         <title>udborets/about</title>
       </Head>
       <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
