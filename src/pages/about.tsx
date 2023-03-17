@@ -42,11 +42,11 @@ const About = () => {
           </AboutParagraph>
         </div>
         <m.div
-          className="flex gap-[0.5rem] flex-col flex-wrap items-center"
+          className="flex gap-[0.5rem] flex-col flex-wrap items-center w-max-full"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
-          <span className="text-[1.5rem] w-fit text-white mb-4">
+          <span className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white mb-4">
             My favorite technologies that I use in projects
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
@@ -56,7 +56,7 @@ const About = () => {
             <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
           </div>
           <div
-            className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max h-[100px]"
+            className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max-full h-[100px]"
             onMouseEnter={() => setIsAlsoVisible(true)}
             onMouseLeave={() => setIsAlsoVisible(false)}
           >
@@ -65,7 +65,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-[500px]"
+                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-"
               >
                 <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
                 <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
