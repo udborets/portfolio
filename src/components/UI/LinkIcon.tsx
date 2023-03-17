@@ -14,7 +14,7 @@ const LinkIcon = ({ link, icon, alt, index }: LinkIconProps) => {
   return (
     <m.a
       href={link}
-      className="w-fit h-fit"
+      className="linkIcon w-fit h-fit"
       initial={{ opacity: 0, translateY: `-${index}%` }}
       animate={{ opacity: 1, translateY: "0%" }}
       transition={{ duration: 3, ease: "easeOut" }}

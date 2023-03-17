@@ -5,7 +5,7 @@ interface TechIconProps {
 
 const TechIcon = ({ text, iconClass }: TechIconProps) => {
   return (
-    <span className="flex justify-center items-center text-[1.5rem] text-white font-bold">
+    <span className="techIcon flex justify-center items-center text-[1.5rem] text-white font-bold">
       <i
         className={`${iconClass} mt-[4px] mx-[1rem]`}
       />

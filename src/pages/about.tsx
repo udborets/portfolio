@@ -12,12 +12,11 @@ const About = () => {
   return (
     <>
       <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets/about</title>
       </Head>
-      <Page className="flex items-center justify-center gap-[50px]" movingFromTop>
-        <div className="about-bio w-[90%] flex flex-col gap-[20px]">
+      <Page className="aboutPage flex items-center justify-center gap-[50px]" movingFromTop>
+        <div className="aboutParagraphs w-[90%] flex flex-col gap-[20px]">
           <AboutParagraph
             transitionDelay={1}
             transitionDuration={0.5}
@@ -52,10 +51,11 @@ const About = () => {
             My favorite technologies that I use in projects
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
+            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
+            <TechIcon iconClass="devicon-nextjs-original" text="Next" />
+            <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
             <TechIcon iconClass="devicon-react-original colored" text="React" />
             <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript" />
-            <TechIcon iconClass="devicon-nextjs-original" text="Next" />
-            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
           </div>
           <div
             className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max-full h-[100px]"
@@ -69,7 +69,6 @@ const About = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-full py-[40px]"
               >
-                <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
                 <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
                 <TechIcon iconClass="devicon-firebase-plain colored" text="Firebase" />
                 <TechIcon iconClass="devicon-express-original" text="Express" />

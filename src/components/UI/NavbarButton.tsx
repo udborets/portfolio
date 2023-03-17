@@ -22,7 +22,7 @@ const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButton
     }
   })
   return (
-    <li className="p-2 bg-opacity-0 w-[130px]">
+    <li className="navbarButton p-2 bg-opacity-0 w-[130px]">
       <Link
         href={navPath}
         onClick={() => setCurrent(navPath)}
