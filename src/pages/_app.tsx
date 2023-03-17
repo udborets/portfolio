@@ -1,4 +1,5 @@
 import type { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
 
 import aboutIcon from '@/assets/aboutIcon.png';
 import aboutIconActive from '@/assets/aboutIconActive.png';
@@ -6,9 +7,8 @@ import homeIcon from '@/assets/homeIcon.png';
 import homeIconActive from '@/assets/homeIconActive.png';
 import Navbar from "@/components/Navbar";
 import NavbarButton from "@/components/UI/NavbarButton";
-import "@/styles/global.scss";
-import { Provider } from 'react-redux';
 import { store } from '@/store/store';
+import "@/styles/global.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -1,15 +1,15 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-import LinkIconRow from "@/components/LinkIconRow";
-import LinkIcon from "@/components/UI/LinkIcon";
-import { Page } from "@/templates/Page";
 import githubIcon from "@/assets/githubIcon.png";
 import telegramIcon from "@/assets/telegramIcon.png";
 import vkIcon from "@/assets/vkIcon.png";
+import LinkIconRow from "@/components/LinkIconRow";
+import LinkIcon from "@/components/UI/LinkIcon";
 import avatarStyles from "@/styles/avatar.module.scss";
-import Link from "next/link";
+import { Page } from "@/templates/Page";
 
 const Home = () => {
   const typedRef = useRef<HTMLSpanElement>(null);
@@ -39,8 +39,7 @@ const Home = () => {
   return (
     <>
       <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets</title>
       </Head>
       <Page className="homePage items-center justify-center">

@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-
-import { usePage } from "@/hooks/usePage";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+
+import { usePage } from "@/hooks/usePage";
 
 interface NavbarButtonProps {
   text: string;
