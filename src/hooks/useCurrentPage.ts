@@ -1,9 +1,11 @@
 import { signal } from "@preact/signals";
 import { useRouter } from "next/router";
 
+const currentPage = signal("");
+
 const useCurrentPage = () => {
   const { asPath } = useRouter();
-  const currentPage = signal(asPath);
+  currentPage.value = asPath;
   function updateCurrentPage(newPage: string) {
     currentPage.value = newPage;
   }
