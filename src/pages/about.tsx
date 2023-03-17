@@ -51,8 +51,8 @@ const About = () => {
             My favorite technologies that I use in projects
           </span>
           <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
-            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
             <TechIcon iconClass="devicon-nextjs-original" text="Next" />
+            <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
             <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
             <TechIcon iconClass="devicon-react-original colored" text="React" />
             <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript" />
