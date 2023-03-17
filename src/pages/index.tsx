@@ -18,7 +18,7 @@ const Home = () => {
     "programmer",
     "web dev newbie",
     "frontend developer",
-    "first-year university student",
+    "first-year univ. student",
   ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
