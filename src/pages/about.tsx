@@ -65,7 +65,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-"
+                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-full py-[40px]"
               >
                 <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
                 <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
