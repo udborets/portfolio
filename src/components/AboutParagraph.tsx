@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 
 interface AboutParagraphProps {
-  children: string;
+  children: any;
   transitionDuration: number;
   transitionDelay: number;
 }
