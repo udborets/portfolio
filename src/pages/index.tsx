@@ -43,7 +43,7 @@ const Home = () => {
         <title>udborets</title>
       </Head>
       <Page className="homePage items-center justify-center">
-        <div className="homePage__wrapper flex flex-wrap items-center justify-center flex-col xl:flex-row">
+        <div className="homePage__wrapper flex flex-wrap items-center justify-center flex-col xl:flex-row w-full gap-[20px]">
           <div className={"rotatingAvatar " + avatarStyles.container}>
             <div className={avatarStyles.box}>
               <div className={avatarStyles["spin-container"]}>
@@ -55,7 +55,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="mainContent flex flex-col items-center justify-center w-full">
+          <div className="mainContent flex flex-col items-center justify-center">
             <span className="myName flex text-[4rem] text-white font-bold w-fit h-fit">Yury Borets</span>
             <div className="typewriter w-full justify-center">
               <span className="typewriter__text flex text-[2rem] w-fit font-bold h-fit" ref={typedRef} />
