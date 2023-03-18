@@ -15,7 +15,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets/about</title>
       </Head>
-      <Page className="aboutPage flex items-center justify-center gap-[50px]" movingFromTop>
+      <Page className="aboutPage flex items-center gap-[50px] xl:justify-center" movingFromTop>
         <div className="aboutParagraphs w-[90%] flex flex-col gap-[20px]">
           <AboutParagraph
             transitionDelay={1}
