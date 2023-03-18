@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <>
       <Head>
-        <title>/projects</title>
+        <title>udborets/projects</title>
       </Head>
       <Page>
         <div className="text-white">{repos ? repos.map((repo) => <a href={repo.html_url} key={repo.name}>{repo.name}</a>) : ' '}</div>
