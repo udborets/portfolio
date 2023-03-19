@@ -27,7 +27,9 @@ const ProjectItem = ({ repo, transitionDelayIndex }: ProjectItemProps) => {
             className="absolute left-0 top-0 z-[2] text-sky px-2 py-[6px] text-[0.8rem] 
             bg-white rounded-br-[0.6rem] ease-out"
           >
-            <span className="hover:translate-x-1 ease-out duration-500 transition-all">Hosting 🔥</span>
+            <span className="hover:translate-x-1 ease-out duration-500 transition-all">
+              Hosting 🔥
+            </span>
           </a>
           : <></>}
         {isShowingDescription
@@ -52,7 +54,7 @@ const ProjectItem = ({ repo, transitionDelayIndex }: ProjectItemProps) => {
             </m.a>
           </>
           : <m.span
-            className="projectItem-title text-white self-center capitalize font-bold"
+            className="projectItem-title text-white self-center capitalize font-bold text-[1.2rem]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 1.5 }}
