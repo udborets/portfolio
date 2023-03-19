@@ -41,6 +41,17 @@ Start the server
 ```bash
   npm run start
 ```
+
+## Todo 📋
+
+- ## fix navbar for low resolution
+
+- ## make better "hosting" link in project item component
+
+- ## make good description for repos in Github
+
+- ## surely something else 🙃
+
 ## Feedback 🙏
 
 **If you have any suggestions or you found a bug in the code, please contact me 🙏:**
