@@ -11,7 +11,7 @@ export const Page = ({ className, children, movingFromTop }: PageProps) => {
     return (
       <m.main
         className="page flex flex-col w-full h-full p-5 main-bg z-[1]"
-        initial={{ opacity: 0, translateY: "-20%" }}
+        initial={{ opacity: 0, translateY: "-8%" }}
         animate={{ opacity: 1, translateY: "0%" }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
