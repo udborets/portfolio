@@ -1,22 +1,17 @@
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import Head from "next/head";
 import { useQuery } from "react-query";
 
+import ProjectItem from "@/components/ProjectItem";
+import { Repo } from "@/models/GithubApi";
 import { Page } from "@/templates/Page";
-
-type Repo = {
-  name: string;
-  html_url: string;
-  id: number;
-  language: string;
-}
 
 const Projects = () => {
   const { data: repos } = useQuery({
     queryFn: async () => {
-      const response = await axios.get("https://api.github.com/users/udborets/repos");
-      const repos = response.data as Repo[];
-      return repos;
+      const response: AxiosResponse<Repo[]> = await axios.get("https://api.github.com/users/udborets/repos");
+      const repos = response.data
+      return repos.filter((repo) => repo.name !== 'udborets');
     }
   })
 
@@ -26,7 +21,13 @@ const Projects = () => {
         <title>udborets/projects</title>
       </Head>
       <Page>
-        <div className="text-white">{repos ? repos.map((repo) => <a href={repo.html_url} key={repo.name}>{repo.name}</a>) : ' '}</div>
+        <div className="projects grid grid-cols-3 gap-[10px] flex-wrap">
+          {repos
+            ? repos.map((repo) => (
+              <ProjectItem key={repo.id} {...repo} />
+            ))
+            : <></>}
+        </div>
       </Page>
     </>
   )
