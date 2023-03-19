@@ -21,7 +21,7 @@ const Projects = () => {
         <title>udborets/projects</title>
       </Head>
       <Page>
-        <div className="projects grid grid-cols-3 gap-[10px] flex-wrap">
+        <div className="projects grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-4 gap-[10px] flex-wrap">
           {repos
             ? repos.map((repo) => (
               <ProjectItem key={repo.id} {...repo} />
