@@ -24,12 +24,10 @@ const ProjectItem = ({ repo, transitionDelayIndex }: ProjectItemProps) => {
         {repo.homepage
           ? <a
             href={repo.homepage}
-            className="absolute left-0 top-0 z-[2] text-sky px-2 py-[6px] text-[0.8rem] 
-            bg-white rounded-br-[0.6rem] ease-out"
+            className="absolute left-0 top-0 z-[2] text-sky w-[5rem] h-[1.6rem] text-[0.8rem] flex items-center justify-center
+            bg-white rounded-br-[0.6rem] ease-out duration-[1s]"
           >
-            <span className="hover:translate-x-1 ease-out duration-500 transition-all">
-              Hosting 🔥
-            </span>
+            Hosting 🔥
           </a>
           : <></>}
         {isShowingDescription
