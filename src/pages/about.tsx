@@ -1,14 +1,11 @@
 import { motion as m } from "framer-motion";
 import Head from "next/head";
-import { useState } from "react";
 
 import AboutParagraph from "@/components/AboutParagraph";
 import TechIcon from "@/components/UI/TechIcon";
-import textPulse from "@/styles/textPulse.module.scss";
 import { Page } from "@/templates/Page";
 
 const About = () => {
-  const [isAlsoVisible, setIsAlsoVisible] = useState<boolean>(false);
   return (
     <>
       <Head>
@@ -43,7 +40,7 @@ const About = () => {
           </AboutParagraph>
         </div>
         <m.div
-          className="flex gap-[0.5rem] flex-col flex-wrap items-center w-max-full"
+          className="flex gap-[0.5rem] flex-col items-center w-max-full"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
@@ -57,35 +54,26 @@ const About = () => {
             <TechIcon iconClass="devicon-react-original colored" text="React" />
             <TechIcon iconClass="devicon-typescript-plain colored" text="TypeScript" />
           </div>
-          <div
-            className="flex gap-[0.5rem] flex-col flex-wrap justify-center items-center w-max-full h-[100px]"
-            onMouseEnter={() => setIsAlsoVisible(true)}
-            onMouseLeave={() => setIsAlsoVisible(false)}
+          <m.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 8 }}
+            className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white my-4"
           >
-            {isAlsoVisible
-              ? <m.section
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                className="flex flex-row items-center justify-center w-full flex-wrap text-white max-w-full py-[40px]"
-              >
-                <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
-                <TechIcon iconClass="devicon-firebase-plain colored" text="Firebase" />
-                <TechIcon iconClass="devicon-express-original" text="Express" />
-                <TechIcon iconClass="devicon-nodejs-plain colored" text="NodeJS" />
-                <TechIcon iconClass="devicon-postgresql-plain colored" text="PostgreSQL" />
-              </m.section>
-              : <m.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                className="flex px-[40px] flex-col items-center align-center text-[1.5rem] mt-[1.5rem] w-full h-full text-white "
-              >
-                I also use
-                <span className={textPulse["textPulse"] + " text-[1rem]"}>hover</span>
-              </m.div>
-            }
-          </div>
+            I also use
+          </m.span>
+          <m.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 9 }}
+            className="flex flex-row items-center justify-center w-full flex-wrap max-w-full"
+          >
+            <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
+            <TechIcon iconClass="devicon-firebase-plain colored" text="Firebase" />
+            <TechIcon iconClass="devicon-express-original" text="Express" />
+            <TechIcon iconClass="devicon-nodejs-plain colored" text="NodeJS" />
+            <TechIcon iconClass="devicon-postgresql-plain colored" text="PostgreSQL" />
+          </m.section>
         </m.div>
       </Page>
     </>
