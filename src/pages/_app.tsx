@@ -1,12 +1,13 @@
 import type { AppProps } from 'next/app';
-import { QueryClient } from 'react-query';
-import { QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux';
 
 import aboutIcon from '@/assets/aboutIcon.png';
 import aboutIconActive from '@/assets/aboutIconActive.png';
 import homeIcon from '@/assets/homeIcon.png';
 import homeIconActive from '@/assets/homeIconActive.png';
+import projectsIcon from '@/assets/projectsIcon.png';
+import projectsIconActive from '@/assets/projectsIconActive.png';
 import Navbar from "@/components/Navbar";
 import NavbarButton from "@/components/UI/NavbarButton";
 import { store } from '@/store/store';
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Navbar>
           <NavbarButton text='Home' navPath='/' img={homeIcon} imgActive={homeIconActive} />
           <NavbarButton text="About" navPath="/about" img={aboutIcon} imgActive={aboutIconActive} />
+          <NavbarButton text="Projects" navPath="/projects" img={projectsIcon} imgActive={projectsIconActive} />
         </Navbar>
         <Component {...pageProps} />
       </Provider>
