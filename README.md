@@ -6,11 +6,13 @@
 
 ## Readme Navigation 🗺️
 
-- ## [1. Tech stack](#tech-stack) 
+- ## [Tech stack](#tech-stack-💻)
 
-- ## [2. Run locally](#run-locally) 
+- ## [Run locally](#run-locally-🏃)
 
-- ## [3. Feedback](#feedback) 
+- ## [Todo](#todo-📋)
+
+- ## [Feedback](#feedback-🙏)
 
 ## Tech Stack 💻
 
@@ -44,13 +46,13 @@ Start the server
 
 ## Todo 📋
 
-- ## fix navbar for low resolution
+- **fix navbar for low resolution**
 
-- ## make better "hosting" link in project item component
+- **make better "hosting" link in project item component**
 
-- ## make good description for repos in Github
+- **make good description for repos in Github**
 
-- ## surely something else 🙃
+- **surely something else 🙃**
 
 ## Feedback 🙏
 
