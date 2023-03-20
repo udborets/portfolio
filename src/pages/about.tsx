@@ -21,25 +21,25 @@ const About = () => {
       <Page className="aboutPage flex items-center gap-[50px] justify-start sm:justify-center" movingFromTop>
         <div className="aboutParagraphs w-[90%] flex flex-col gap-[20px]">
           <AboutParagraph
-            transitionDelay={1}
+            transitionDelay={1 * 0.5}
             transitionDuration={0.5}
           >
             My name is Yury, I&apos;m 18 year old
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={2}
+            transitionDelay={2 * 0.5}
             transitionDuration={0.5}
           >
             I started my frontend career in the very beginning of 2023
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={3}
+            transitionDelay={3 * 0.5}
             transitionDuration={0.5}
           >
             I love learning new technologies and exploring frameworks
           </AboutParagraph>
           <AboutParagraph
-            transitionDelay={4}
+            transitionDelay={4 * 0.5}
             transitionDuration={0.5}
           >
             I speak English and Russian, and currently I&apos;m learning Dutch
@@ -49,7 +49,7 @@ const About = () => {
           className="flex gap-[0.5rem] flex-col items-center w-max-full"
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 5 }}>
+          transition={{ duration: 2, ease: "easeInOut", delay: 5 * 0.5 }}>
           <span className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white mb-4">
             My favorite technologies that I use in projects
           </span>
@@ -63,7 +63,7 @@ const About = () => {
           <m.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 8 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 7 * 0.5 }}
             className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white my-4"
           >
             I also use
@@ -71,7 +71,7 @@ const About = () => {
           <m.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 9 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 8 * 0.5 }}
             className="flex flex-row items-center justify-center w-full flex-wrap max-w-full mb-[20px]"
           >
             <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
