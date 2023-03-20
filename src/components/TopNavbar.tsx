@@ -12,9 +12,9 @@ const LeftNavbar = ({ children, className }: NavbarProps) => {
     <>
       <span
         onClick={() => setIsActive(!navbar.isActive)}
-        className="absolute z-[100] right-0 top-0 text-white"
+        className="absolute z-[100] right-0 top-0 text-white select-none"
       >
-        X
+        &#10006;
       </span>
       {navbar.isActive
         ? <m.aside className="navbar flex nav xl:hidden 2xl:hidden h-full min-h-full w-full min-w-full absolute 
