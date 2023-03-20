@@ -12,7 +12,7 @@ const LeftNavbar = ({ children, className }: NavbarProps) => {
     <>
       <span
         onClick={() => setIsActive(!navbar.isActive)}
-        className="absolute z-[100] right-0 top-0 text-white select-none"
+        className="absolute z-[100] right-0 top-0 text-white select-none xl:hidden"
       >
         &#10006;
       </span>
