@@ -5,4 +5,5 @@ export type Repo = {
   language: string;
   description: string;
   homepage: string;
+  created_at: string;
 }
