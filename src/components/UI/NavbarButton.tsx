@@ -27,7 +27,7 @@ const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButton
     <li className="navbarButton p-2 bg-opacity-0 w-[130px]">
       <Link
         href={navPath}
-        onClick={() => { setCurrent(navPath); setIsActive(false)}}
+        onClick={() => setCurrent(navPath)}
         className={`w-full text-[1.2rem] items-center flex gap-[0.5rem] font-bold 
         ${page.current === navPath ? "text-sky" :
             "text-white hover:tracking-[0.12rem]"} transition-all duration-[0.5s] ease-out ${className ?? ""}`}
