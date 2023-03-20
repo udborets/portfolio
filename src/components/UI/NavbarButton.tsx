@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
+import { useNavbar } from "@/hooks/useNavbar";
 import { usePage } from "@/hooks/usePage";
 
 interface NavbarButtonProps {
@@ -15,9 +16,10 @@ interface NavbarButtonProps {
 
 const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButtonProps) => {
   const { page, setCurrent } = usePage();
+  const { setIsActive } = useNavbar();
   const { asPath } = useRouter();
   useEffect(() => {
-    if(asPath !== page.current) {
+    if (asPath !== page.current) {
       setCurrent(asPath)
     }
   })
@@ -25,7 +27,7 @@ const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButton
     <li className="navbarButton p-2 bg-opacity-0 w-[130px]">
       <Link
         href={navPath}
-        onClick={() => setCurrent(navPath)}
+        onClick={() => { setCurrent(navPath); setIsActive(false)}}
         className={`w-full text-[1.2rem] items-center flex gap-[0.5rem] font-bold 
         ${page.current === navPath ? "text-sky" :
             "text-white hover:tracking-[0.12rem]"} transition-all duration-[0.5s] ease-out ${className ?? ""}`}
