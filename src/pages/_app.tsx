@@ -8,7 +8,7 @@ import homeIcon from '@/assets/homeIcon.png';
 import homeIconActive from '@/assets/homeIconActive.png';
 import projectsIcon from '@/assets/projectsIcon.png';
 import projectsIconActive from '@/assets/projectsIconActive.png';
-import Navbar from "@/components/Navbar";
+import LeftNavbar from "@/components/LeftNavbar";
 import NavbarButton from "@/components/UI/NavbarButton";
 import { store } from '@/store/store';
 import "@/styles/global.scss";
@@ -19,11 +19,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
-        <Navbar>
+        <LeftNavbar>
           <NavbarButton text='Home' navPath='/' img={homeIcon} imgActive={homeIconActive} />
           <NavbarButton text="About" navPath="/about" img={aboutIcon} imgActive={aboutIconActive} />
           <NavbarButton text="Projects" navPath="/projects" img={projectsIcon} imgActive={projectsIconActive} />
-        </Navbar>
+        </LeftNavbar>
         <Component {...pageProps} />
       </Provider>
     </QueryClientProvider>
