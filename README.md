@@ -6,19 +6,19 @@
 
 ## Readme Navigation 🗺️
 
-- ## [Tech stack](#tech-stack-💻)
+- ## [Tech stack:computer:](#tech-stack-:computer:)
 
-- ## [Run locally](#run-locally-🏃)
+- ## [Run locally:runner:](#run-locally-:runner:)
 
-- ## [Todo](#todo-📋)
+- ## [Todo:clipboard:](#todo-:clipboard:)
 
-- ## [Feedback](#feedback-🙏)
+- ## [Feedback:pray:](#feedback-:pray:)
 
-## Tech Stack 💻
+## Tech Stack :computer:
 
 **[React](https://react.dev/), [Next](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [Redux](https://redux.js.org/) [(RTK)](https://redux-toolkit.js.org/), [SCSS](https://sass-lang.com/)**
 
-## Run Locally 🏃
+## Run Locally :runner:
 
 Clone the project (make sure You have [Git](https://git-scm.com/) installed)
 
@@ -44,17 +44,17 @@ Start the server
   npm run start
 ```
 
-## Todo 📋
+## Todo :clipboard:
 
-- **fix navbar for low resolution**
+- ## fix navbar for low resolution
 
-- **make better "hosting" link in project item component**
+- ## make better "hosting" link in project item component
 
-- **make good description for repos in Github**
+- ## make good description for repos in Github
 
-- **surely something else 🙃**
+- ## surely something else 🙃
 
-## Feedback 🙏
+## Feedback :pray:
 
 **If you have any suggestions or you found a bug in the code, please contact me 🙏:**
 
