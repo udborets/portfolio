@@ -6,17 +6,21 @@
 
 ## Readme Navigation 🗺️
 
-- ## <a>[Tech stack](#tech-stack-:computer:)</a>
+- ## [Tech stack](#techstackl)
 
-- ## <a>[Run locally](#run-locally-:runner:)</a>
+- ## [Run locally](#runlocallyl)
 
-- ## <a>[Todo](#todo-:clipboard:)</a>
+- ## [Todo](#todol)
 
-- ## <a>[Feedback](#feedback-:pray:)</a>
+- ## [Feedback :pray:](#feedbackl)
+
+<a id="techstackl"></a>
 
 ## Tech Stack :computer:
 
 **[React](https://react.dev/), [Next](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [Redux](https://redux.js.org/) [(RTK)](https://redux-toolkit.js.org/), [SCSS](https://sass-lang.com/)**
+
+<a id="runlocallyl"></a>
 
 ## Run Locally :runner:
 
@@ -44,6 +48,8 @@ Start the server
   npm run start
 ```
 
+<a id="todol"></a>
+
 ## Todo :clipboard:
 
 - ## fix navbar for low resolution
@@ -53,6 +59,8 @@ Start the server
 - ## make good description for repos in Github
 
 - ## surely something else 🙃
+
+<a id="feedbackl"></a>
 
 ## Feedback :pray:
 
