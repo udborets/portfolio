@@ -1,11 +1,17 @@
 import { motion as m } from "framer-motion";
 import Head from "next/head";
+import { useEffect } from "react";
 
 import AboutParagraph from "@/components/AboutParagraph";
 import TechIcon from "@/components/UI/TechIcon";
+import { useNavbar } from "@/hooks/useNavbar";
 import { Page } from "@/templates/Page";
 
 const About = () => {
+  const { setIsActive } = useNavbar();
+  useEffect(() => {
+    setIsActive(false);
+  }, [])
   return (
     <>
       <Head>

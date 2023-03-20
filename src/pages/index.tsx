@@ -8,10 +8,15 @@ import telegramIcon from "@/assets/telegramIcon.png";
 import vkIcon from "@/assets/vkIcon.png";
 import LinkIconRow from "@/components/LinkIconRow";
 import LinkIcon from "@/components/UI/LinkIcon";
+import { useNavbar } from "@/hooks/useNavbar";
 import avatarStyles from "@/styles/avatar.module.scss";
 import { Page } from "@/templates/Page";
 
 const Home = () => {
+  const { setIsActive } = useNavbar();
+  useEffect(() => {
+    setIsActive(false);
+  }, [])
   const typedRef = useRef<HTMLSpanElement>(null);
   const typedArray = [
     "18 y.o. dev",

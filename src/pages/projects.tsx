@@ -1,12 +1,18 @@
 import axios, { AxiosResponse } from "axios";
 import Head from "next/head";
+import { useEffect } from "react";
 import { useQuery } from "react-query";
 
 import ProjectItem from "@/components/ProjectItem";
+import { useNavbar } from "@/hooks/useNavbar";
 import { Repo } from "@/models/GithubApi";
 import { Page } from "@/templates/Page";
 
 const Projects = () => {
+  const { setIsActive } = useNavbar();
+  useEffect(() => {
+    setIsActive(false);
+  }, [])
   const { data: repos } = useQuery({
     queryFn: async () => {
       const response: AxiosResponse<Repo[]> = await axios.get("https://api.github.com/users/udborets/repos");
