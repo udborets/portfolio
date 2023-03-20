@@ -18,7 +18,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets/about</title>
       </Head>
-      <Page className="aboutPage flex items-center gap-[50px] justify-center" movingFromTop>
+      <Page className="aboutPage flex items-center gap-[50px] justify-start" movingFromTop>
         <div className="aboutParagraphs w-[90%] flex flex-col gap-[20px]">
           <AboutParagraph
             transitionDelay={1}
@@ -72,7 +72,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 9 }}
-            className="flex flex-row items-center justify-center w-full flex-wrap max-w-full"
+            className="flex flex-row items-center justify-center w-full flex-wrap max-w-full mb-[20px]"
           >
             <TechIcon iconClass="devicon-sass-original colored" text="Sass" />
             <TechIcon iconClass="devicon-firebase-plain colored" text="Firebase" />
