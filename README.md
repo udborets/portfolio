@@ -52,11 +52,7 @@ Start the server
 
 ## Todo :clipboard:
 
-- ## fix navbar for low resolution
-
 - ## make better "hosting" link in project item component
-
-- ## make good description for repos in Github
 
 - ## surely something else 🙃
 
