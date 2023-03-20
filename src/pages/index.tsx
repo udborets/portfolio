@@ -42,7 +42,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets</title>
       </Head>
-      <Page className="homePage items-center xl:justify-center">
+      <Page className="homePage items-center justify-center">
         <div className="homePage__wrapper flex flex-wrap items-center justify-center flex-col xl:flex-row w-full gap-[20px]">
           <div className={"rotatingAvatar " + avatarStyles.container}>
             <div className={avatarStyles.box}>
