@@ -10,8 +10,10 @@ const Projects = () => {
   const { data: repos } = useQuery({
     queryFn: async () => {
       const response: AxiosResponse<Repo[]> = await axios.get("https://api.github.com/users/udborets/repos");
-      const repos = response.data
-      return repos.filter((repo) => repo.name !== 'udborets');
+      const repos = response.data;
+      return repos
+        .filter((repo) => repo.name !== 'udborets')
+        .sort((repo1, repo2) => new Date(repo2.created_at).getTime() - new Date(repo1.created_at).getTime());
     }
   })
 
