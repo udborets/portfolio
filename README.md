@@ -6,13 +6,13 @@
 
 ## Readme Navigation 🗺️
 
-- ## <a>[Tech stack]</a>(#tech-stack-:computer:)
+- ## <a>[Tech stack](#tech-stack-:computer:)</a>
 
-- ## <a>[Run locally]</a>(#run-locally-:runner:)
+- ## <a>[Run locally](#run-locally-:runner:)</a>
 
-- ## <a>[Todo]</a>(#todo-:clipboard:)
+- ## <a>[Todo](#todo-:clipboard:)</a>
 
-- ## <a>[Feedback]</a>(#feedback-:pray:)
+- ## <a>[Feedback](#feedback-:pray:)</a>
 
 ## Tech Stack :computer:
 
