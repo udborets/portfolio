@@ -20,6 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
+        {/* <button className="absolute right-0 top-0 z-[100] text-white" id="theme">
+          Change theme
+        </button> */}
         <TopNavbar>
           <NavbarButton text='Home' navPath='/' img={homeIcon} imgActive={homeIconActive} />
           <NavbarButton text="About" navPath="/about" img={aboutIcon} imgActive={aboutIconActive} />
