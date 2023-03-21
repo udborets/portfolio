@@ -27,7 +27,7 @@ const LeftNavbar = ({ children, className }: NavbarProps) => {
       {navbar.isActive
         ? <m.aside className="navbar flex nav xl:hidden 2xl:hidden h-full min-h-full w-full min-w-full absolute 
             items-center flex-col justify-center overflow-hidden
-          bg-black px-2 z-[2]"
+          bg-secondary px-2 z-[2]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeOut" }}

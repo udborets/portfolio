@@ -61,7 +61,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mainContent flex flex-col items-center justify-center">
-            <span className="myName flex text-[4rem] text-white font-bold w-fit h-fit p-1">Yury Borets</span>
+            <span className="myName flex text-[4rem] theme-text font-bold w-fit h-fit p-1">Yury Borets</span>
             <div className="typewriter w-full justify-center">
               <span className="typewriter__text flex text-[2rem] w-max font-bold h-fit" ref={typedRef} />
             </div>

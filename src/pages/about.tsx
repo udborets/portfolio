@@ -50,10 +50,10 @@ const About = () => {
           initial={{ translateY: "-20%", opacity: 0 }}
           animate={{ translateY: "0%", opacity: 1 }}
           transition={{ duration: 2, ease: "easeInOut", delay: 5 * 0.5 }}>
-          <span className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white mb-4">
+          <span className="text-[1.5rem] flex-wrap flex w-max-full text-center theme-text mb-4">
             My favorite technologies that I use in projects
           </span>
-          <div className="flex flex-row items-center justify-center w-full flex-wrap text-white">
+          <div className="flex flex-row items-center justify-center w-full flex-wrap theme-text">
             <TechIcon iconClass="devicon-nextjs-original" text="Next" />
             <TechIcon iconClass="devicon-tailwindcss-plain colored" text="Tailwind" />
             <TechIcon iconClass="devicon-redux-original colored" text="Redux" />
@@ -64,7 +64,7 @@ const About = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut", delay: 7 * 0.5 }}
-            className="text-[1.5rem] flex-wrap flex w-max-full text-center text-white my-4"
+            className="text-[1.5rem] flex-wrap flex w-max-full text-center theme-text my-4"
           >
             I also use
           </m.span>
