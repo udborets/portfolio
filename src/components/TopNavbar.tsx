@@ -19,6 +19,7 @@ const LeftNavbar = ({ children, className }: NavbarProps) => {
           onClick={() => setIsActive(!navbar.isActive)}
           type="checkbox"
           id="checkbox"
+          checked={navbar.isActive}
           className={menuButtonStyles.checkbox} />
         <span className={menuButtonStyles.line}></span>
         <span className={menuButtonStyles.line}></span>
