@@ -11,7 +11,7 @@ const ProjectItem = ({ repo, transitionDelayIndex }: ProjectItemProps) => {
   const [isShowingDescription, setIsShowingDescription] = useState(false);
   return (
     <m.div
-      className="projectItem align-center justify-center flex h-[300px] p-4 border-white border-2 rounded-lg bg-secondary"
+      className="projectItem align-center justify-center flex h-[300px] p-4 border-white border-2 rounded-lg bg-secondary overflow-hidden"
       initial={{ translateY: "-20%", opacity: 0 }}
       animate={{ translateY: "0", translateX: 0, opacity: 1 }}
       transition={{ ease: "easeOut", duration: 1, delay: transitionDelayIndex * 0.5 }}
