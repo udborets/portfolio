@@ -30,7 +30,7 @@ const LeftNavbar = ({ children, className }: NavbarProps) => {
           bg-black px-2 z-[2]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           exit={{ opacity: 0 }}
         >
           <nav>
