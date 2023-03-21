@@ -12,11 +12,27 @@
 
   html,
   body {
-    @apply h-full w-full main-bg min-h-full;
+    @apply h-full w-full theme-bg min-h-full;
   }
 
   .text-sky {
     @apply text-[#00BFFF];
+  }
+
+  .theme-text {
+    @apply text-[var(--text)];
+  }
+
+  .bg-secondary {
+    @apply bg-[var(--bg-secondary)]
+  }
+
+  .bg-third {
+    @apply bg-[var(--bg-third)]
+  }
+
+  .theme-bg {
+    @apply bg-[var(--bg)];
   }
 
   .main-bg {
@@ -24,7 +40,7 @@
   }
 
   .typewriter {
-    @apply text-white flex;
+    @apply theme-text flex;
 
     .typewriter__text {
       @apply text-sky;
@@ -35,7 +51,21 @@
     }
 
     span {
-      @apply h-full text-white flex justify-center items-center text-[2rem];
+      @apply h-full theme-text flex justify-center items-center text-[2rem];
     }
   }
+}
+
+:root:has(#theme:active) {
+  --text: black;
+  --bg: #ffffff;
+  --bg-secondary: #949494;
+  --bg-third: #000000;
+}
+
+:root {
+  --text: #ffffff;
+  --bg: #111111;
+  --bg-secondary: black;
+  --bg-third: #ffffff;
 }
