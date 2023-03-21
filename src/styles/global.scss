@@ -7,7 +7,7 @@
 
 @layer components {
   #__next {
-    @apply h-full w-full flex flex-row;
+    @apply h-full w-full flex flex-col xl:flex-row;
   }
 
   html,
