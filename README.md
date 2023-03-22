@@ -6,11 +6,11 @@
 
 ## Readme Navigation 🗺️
 
-- ## [Tech stack](#techstackl)
+- ## [Tech stack :computer:](#techstackl)
 
-- ## [Run locally](#runlocallyl)
+- ## [Run locally :runner:](#runlocallyl)
 
-- ## [Todo](#todol)
+- ## [Todo :clipboard:](#todol)
 
 - ## [Feedback :pray:](#feedbackl)
 
