@@ -13,7 +13,7 @@ const Projects = () => {
   useEffect(() => {
     setIsActive(false);
   }, [])
-  const { data: repos } = useQuery({
+  const repos = useQuery({
     queryFn: async () => {
       const response: AxiosResponse<Repo[]> = await axios.get("https://api.github.com/users/udborets/repos");
       const repos = response.data;
@@ -30,8 +30,8 @@ const Projects = () => {
       </Head>
       <Page movingFromTop className="xl:justify-center">
         <div className="projects grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-4 gap-[10px] flex-wrap">
-          {repos
-            ? repos.map((repo, i) => (
+          {repos.data
+            ? repos.data.map((repo, i) => (
               <ProjectItem key={repo.id} repo={repo} transitionDelayIndex={i + 1} />
             ))
             : <></>}
