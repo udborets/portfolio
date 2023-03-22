@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
@@ -7,9 +6,10 @@ import githubIcon from "@/assets/githubIcon.png";
 import telegramIcon from "@/assets/telegramIcon.png";
 import vkIcon from "@/assets/vkIcon.png";
 import LinkIconRow from "@/components/LinkIconRow";
+import RotatingAvatar from "@/components/RotatingAvatar";
+import Typewriter from "@/components/Typewriter";
 import LinkIcon from "@/components/UI/LinkIcon";
 import { useNavbar } from "@/hooks/useNavbar";
-import avatarStyles from "@/styles/avatar.module.scss";
 import { Page } from "@/templates/Page";
 
 const Home = () => {
@@ -49,22 +49,10 @@ const Home = () => {
       </Head>
       <Page className="homePage items-center justify-center">
         <div className="homePage__wrapper flex flex-wrap items-center justify-center flex-col xl:flex-row w-full gap-[20px]">
-          <div className={"rotatingAvatar " + avatarStyles.container}>
-            <div className={avatarStyles.box}>
-              <div className={avatarStyles["spin-container"]}>
-                <div className={avatarStyles.shape}>
-                  <div className={avatarStyles.bd}>
-                    <Link className={avatarStyles.blur} href="/about"></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <RotatingAvatar />
           <div className="mainContent flex flex-col items-center justify-center">
             <span className="myName flex text-[4rem] theme-text font-bold w-fit h-fit p-1">Yury Borets</span>
-            <div className="typewriter w-full justify-center">
-              <span className="typewriter__text flex text-[2rem] w-max font-bold h-fit" ref={typedRef} />
-            </div>
+            <Typewriter typedRef={typedRef} />
             <LinkIconRow>
               <LinkIcon index={50 * 1} alt="Github" link="https://github.com/udborets/" icon={githubIcon} />
               <LinkIcon index={50 * 2} alt="Telegram" link="https://t.me/udborets" icon={telegramIcon} />
