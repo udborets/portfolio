@@ -47,7 +47,7 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <title>udborets</title>
       </Head>
-      <Page className="homePage items-center justify-center">
+      <Page className="homePage items-center justify-start xl:justify-center lg:justify-center">
         <div className="homePage__wrapper flex flex-wrap items-center justify-center flex-col xl:flex-row w-full gap-[20px]">
           <RotatingAvatar />
           <div className="mainContent flex flex-col items-center justify-center">
