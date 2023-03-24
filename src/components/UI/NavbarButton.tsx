@@ -15,25 +15,18 @@ interface NavbarButtonProps {
 }
 
 const NavbarButton = ({ text, navPath, img, imgActive, className }: NavbarButtonProps) => {
-  const { page, setCurrent } = usePage();
-  const { setIsActive } = useNavbar();
   const { asPath } = useRouter();
-  useEffect(() => {
-    if (asPath !== page.current) {
-      setCurrent(asPath)
-    }
-  })
+  const isCurrentPage = asPath === navPath;
   return (
     <li className="navbarButton p-2 bg-opacity-0 w-[130px]">
       <Link
         href={navPath}
-        onClick={() => setCurrent(navPath)}
         className={`w-full text-[1.2rem] items-center flex gap-[0.5rem] font-bold 
-        ${page.current === navPath ? "text-sky" :
+        ${isCurrentPage ? "text-sky" :
             "theme-text hover:tracking-[0.12rem]"} transition-all duration-[0.5s] ease-out ${className ?? ""}`}
       >
         <Image
-          src={page.current === navPath ? imgActive : img}
+          src={isCurrentPage ? imgActive : img}
           className="w-[29px] h-[29px] flex"
           alt="*"
         />
