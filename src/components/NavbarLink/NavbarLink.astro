@@ -8,6 +8,6 @@ export interface NavbarLinkProps {
 const { href, text, hoverTitle } = Astro.props as NavbarLinkProps;
 ---
 
-<a href={href} title={hoverTitle}>
+<a href={href} title={hoverTitle} class="navbarLink grid content-center px-3 py-2 bg-black text-white hover:bg-opacity-50 duration-300 transition-colors">
   {text}
 </a>
