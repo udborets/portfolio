@@ -1,5 +1,5 @@
 ---
-import Navbar from "@/components/Navbar/Navbar.astro";
+import Header from "@/components/Header/Header.astro";
 import type { NavbarLinkProps } from "@/components/NavbarLink/NavbarLink.astro";
 
 export interface LayoutProps {
@@ -34,7 +34,7 @@ const navbarLinks: NavbarLinkProps[] = [
     <title>{documentTitle}</title>
   </head>
   <body>
-    <Navbar links={navbarLinks} />
+    <Header navbarLinks={navbarLinks}/>
     <slot />
   </body>
 </html>
