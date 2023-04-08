@@ -1,0 +1,14 @@
+---
+import Navbar from "@/components/Navbar/Navbar.astro";
+import type { NavbarLinkProps } from "@/components/NavbarLink/NavbarLink.astro";
+
+export interface HeaderProps {
+  navbarLinks: NavbarLinkProps[];
+}
+
+const { navbarLinks } = Astro.props as HeaderProps;
+---
+
+<header class="header flex">
+  <Navbar links={navbarLinks} />
+</header>
