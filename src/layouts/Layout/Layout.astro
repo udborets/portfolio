@@ -1,0 +1,19 @@
+---
+export interface LayoutProps {
+  title: string;
+}
+
+const { title } = Astro.props as LayoutProps;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
