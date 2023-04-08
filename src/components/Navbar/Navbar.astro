@@ -1,0 +1,22 @@
+---
+import type { NavbarLinkProps } from "@/components/NavbarLink/NavbarLink.astro";
+import NavbarLink from "@/components/NavbarLink/NavbarLink.astro";
+
+export interface NavbarProps {
+  links: NavbarLinkProps[];
+}
+
+const { links: navbarLinks } = Astro.props as NavbarProps;
+---
+
+<nav>
+  <ul>
+    {
+      navbarLinks.map((navbarLinkProps) => (
+        <li>
+          <NavbarLink {...navbarLinkProps} />
+        </li>
+      ))
+    }
+  </ul>
+</nav>
