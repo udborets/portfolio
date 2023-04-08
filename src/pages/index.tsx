@@ -19,11 +19,12 @@ const Home = () => {
   }, [])
   const typedRef = useRef<HTMLSpanElement>(null);
   const typedArray = [
-    "18 y.o. dev",
     "programmer",
-    "web dev newbie",
     "frontend developer",
-    "first-year univ. student",
+    "quick learner",
+    "people person",
+    "music lover",
+    "sports enthusiast",
   ].sort(() => Math.random() - 0.5);
   useEffect(() => {
     const typed = new Typed(typedRef.current, {
