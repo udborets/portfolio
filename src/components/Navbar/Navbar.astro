@@ -9,11 +9,11 @@ export interface NavbarProps {
 const { links: navbarLinks } = Astro.props as NavbarProps;
 ---
 
-<nav>
-  <ul>
+<nav class="navbar w-fit h-fit">
+  <ul class="navbar__links flex gap-2">
     {
       navbarLinks.map((navbarLinkProps) => (
-        <li>
+        <li class="navbar__link w-fit h-fit">
           <NavbarLink {...navbarLinkProps} />
         </li>
       ))
