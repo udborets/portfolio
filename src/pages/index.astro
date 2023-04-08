@@ -1,9 +1,13 @@
 ---
-import Layout from "@/layouts/Layout/Layout.astro";
+import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
+
+const layoutProps: LayoutProps = {
+  title: "udborets",
+};
 ---
 
-<Layout>
+<Layout {...layoutProps}>
   <main class="homePage">
-
+    Home page
   </main>
 </Layout>
