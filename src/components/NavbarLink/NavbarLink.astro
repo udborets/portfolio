@@ -4,4 +4,10 @@ export interface NavbarLinkProps {
   text: string;
   hoverTitle: string;
 }
+
+const { href, text, hoverTitle } = Astro.props as NavbarLinkProps;
 ---
+
+<a href={href} title={hoverTitle}>
+  {text}
+</a>
