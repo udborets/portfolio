@@ -9,6 +9,6 @@ export interface HeaderProps {
 const { navbarLinks } = Astro.props as HeaderProps;
 ---
 
-<header class="header flex">
+<header class="header w-full h-fit flex justify-end p-4">
   <Navbar links={navbarLinks} />
 </header>
