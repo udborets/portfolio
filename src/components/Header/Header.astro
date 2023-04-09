@@ -15,17 +15,3 @@ const { navbarLinks } = Astro.props as HeaderProps;
 >
   <Navbar links={navbarLinks} />
 </header>
-
-<script>
-  let prevScrollpos = window.pageYOffset;
-  const a = document.getElementById("header") as HTMLElement;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      a.style.top = "0";
-    } else {
-      a.style.top = "-10%";
-    }
-    prevScrollpos = currentScrollPos;
-  };
-</script>
