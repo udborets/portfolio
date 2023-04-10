@@ -11,11 +11,15 @@ const { navbarLinks } = Astro.props as HeaderProps;
 ---
 
 <header
-  class="header w-full h-fit flex justify-around items-center p-4 fixed transition-all bg-dark-blue duration-1000 top-0 ease-in-out"
-  id="header"
+  class="header w-full h-fit flex flex-col md:flex-row justify-around items-center flex-wrap p-4 fixed transition-all bg-dark-blue duration-1000 top-0 ease-in-out"
 >
   <div class="title flex gap-[5px] justify-center items-center">
-    <img class="title__logo w-auto h-[30px]" src={logo} alt="logo" />
+    <img
+      class="title__logo w-auto h-[30px]"
+      src={logo}
+      alt="logo"
+      loading="lazy"
+    />
     <span class="title__text stylishText text-white text-[3rem]">dborets</span>
   </div>
   <Navbar links={navbarLinks} />
