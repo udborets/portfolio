@@ -42,6 +42,10 @@ const navbarLinks: NavbarLinkProps[] = [
 <style is:global lang="css">
   @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 
+  .bg-dark-blue {
+    @apply bg-[#080216];
+  }
+
   html,
   body {
     width: 100%;
@@ -53,7 +57,7 @@ const navbarLinks: NavbarLinkProps[] = [
   }
 
   html {
-    background: rgb(22, 22, 22);
+    @apply bg-dark-blue;
   }
 
   .stylishText {
