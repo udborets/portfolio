@@ -1,6 +1,7 @@
 ---
 import Navbar from "@/components/Navbar/Navbar.astro";
 import type { NavbarLinkProps } from "@/components/NavbarLink/NavbarLink.astro";
+import logo from "@/assets/logo.png";
 
 export interface HeaderProps {
   navbarLinks: NavbarLinkProps[];
@@ -10,8 +11,12 @@ const { navbarLinks } = Astro.props as HeaderProps;
 ---
 
 <header
-  class="header w-full h-fit flex justify-end p-4 fixed transition-all bg-dark-blue duration-1000 top-0 ease-in-out"
+  class="header w-full h-fit flex justify-around items-center p-4 fixed transition-all bg-dark-blue duration-1000 top-0 ease-in-out"
   id="header"
 >
+  <div class="title flex gap-[5px] justify-center items-center">
+    <img class="title__logo w-auto h-[30px]" src={logo} alt="logo" />
+    <span class="title__text stylishText text-white text-[3rem]">dborets</span>
+  </div>
   <Navbar links={navbarLinks} />
 </header>
