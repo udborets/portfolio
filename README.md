@@ -18,7 +18,7 @@
 
 ## Tech Stack :computer:
 
-**[React](https://react.dev/), [Next](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [Redux](https://redux.js.org/) [(RTK)](https://redux-toolkit.js.org/), [SCSS](https://sass-lang.com/)**
+**[Astro](https://astro.build/), [React](https://react.dev/), [TailwindCSS](https://tailwindcss.com/)**
 
 <a id="runlocallyl"></a>
 
@@ -51,8 +51,6 @@ Start the server
 <a id="todol"></a>
 
 ## Todo :clipboard:
-
-- ## make better "hosting" link in project item component
 
 - ## surely something else 🙃
 
