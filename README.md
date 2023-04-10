@@ -52,7 +52,17 @@ Start the server
 
 ## Todo :clipboard:
 
-- ## surely something else 🙃
+- **change background image**
+
+- **add navbar on button click for low res devices**
+
+- **add about me content**
+
+- **add projects content**
+
+- **add contact me form**
+
+- **surely something else 🙃**
 
 <a id="feedbackl"></a>
 
