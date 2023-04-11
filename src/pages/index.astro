@@ -1,6 +1,7 @@
 ---
 import Greeting from "@/components/Greeting/Greeting.astro";
 import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
+import EarthCanvas from "@/components/EarthCanvas/EarthCanvas";
 
 const layoutProps: LayoutProps = {
   title: "udborets",
@@ -12,5 +13,8 @@ const layoutProps: LayoutProps = {
     class="homePage text-white w-full p-10 flex flex-col items-center h-full mt-[50px]"
   >
     <Greeting />
+    <div class="homePage__earthCanvasWrapper h-[400px] w-[400px] md:w-[600px] md:h-[600px]">
+      <EarthCanvas client:load />
+    </div>
   </main>
 </Layout>
