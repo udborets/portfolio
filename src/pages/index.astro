@@ -1,6 +1,7 @@
 ---
 import Earth from "@/components/Earth/Earth";
 import Greeting from "@/components/Greeting/Greeting.astro";
+import Overview from "@/components/Overview/Overview.astro";
 import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
 
 const layoutProps: LayoutProps = {
@@ -10,9 +11,10 @@ const layoutProps: LayoutProps = {
 
 <Layout {...layoutProps}>
   <main
-    class="homePage text-white w-full p-10 flex flex-col items-center h-full mt-[50px]"
+    class="homePage text-white w-full p-10 flex flex-col gap-[5rem] items-center h-full mt-[50px]"
   >
     <Greeting />
     <Earth client:load />
+    <Overview />
   </main>
 </Layout>
