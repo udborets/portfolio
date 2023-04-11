@@ -3,7 +3,7 @@ import styles from "./Earth.module.css";
 
 const Earth = () => {
   return (
-    <div className="earth h-[400px] w-[400px] md:w-[600px] md:h-[600px] relative flex">
+    <div className="earth h-[300px] w-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] relative flex">
       <EarthCanvas />
       <button
         className='earth__button absolute bg-black md:w-[30px] w-[20px] md:h-[70px] h-[50px] outline outline-white outline-1 left-[48%] bottom-0 rounded-[30px]'
