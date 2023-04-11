@@ -18,7 +18,7 @@
 
 ## Tech Stack :computer:
 
-**[React](https://react.dev/), [Next](https://nextjs.org/), [TailwindCSS](https://tailwindcss.com/), [Redux](https://redux.js.org/) [(RTK)](https://redux-toolkit.js.org/), [SCSS](https://sass-lang.com/)**
+**[Astro](https://astro.build/), [React](https://react.dev/), [TailwindCSS](https://tailwindcss.com/)**
 
 <a id="runlocallyl"></a>
 
@@ -52,9 +52,17 @@ Start the server
 
 ## Todo :clipboard:
 
-- ## make better "hosting" link in project item component
+- **change background image**
 
-- ## surely something else 🙃
+- **add navbar on button click for low res devices**
+
+- **add about me content**
+
+- **add projects content**
+
+- **add contact me form**
+
+- **surely something else 🙃**
 
 <a id="feedbackl"></a>
 
