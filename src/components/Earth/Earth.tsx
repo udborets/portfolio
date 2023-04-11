@@ -3,13 +3,13 @@ import styles from "./Earth.module.css";
 
 const Earth = () => {
   return (
-    <div className="earth h-[400px] w-[400px] md:w-[600px] md:h-[600px] relative">
+    <div className="earth h-[400px] w-[400px] md:w-[600px] md:h-[600px] relative flex">
       <EarthCanvas />
       <button
         className='earth__button absolute bg-black md:w-[30px] w-[20px] md:h-[70px] h-[50px] outline outline-white outline-1 left-[48%] bottom-0 rounded-[30px]'
       />
       <p
-        className={`earth__license bg-black text-white rounded-[10px] outline outline-white outline-1 p-4`}
+        className={`earth__license absolute md:text-[1.4rem] md:left-0 md:top-[50%] left-[25%] top-[35%] w-[50%] md:w-full bg-black text-white rounded-[10px] outline outline-white outline-1 p-4 text-center`}
       >
         This work is based on&nbsp;
         <a
