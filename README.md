@@ -52,8 +52,6 @@ Start the server
 
 ## Todo :clipboard:
 
-- **change background image**
-
 - **add navbar on button click for low res devices**
 
 - **add about me content**
