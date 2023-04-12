@@ -1,0 +1,23 @@
+---
+export interface ProjectProps {
+  title: string;
+  description: string;
+  techStack: string;
+  imgSrc: string;
+}
+
+const { description, imgSrc, techStack, title } = Astro.props as ProjectProps;
+---
+
+<div class="project w-full h-fit">
+  <h4 class="project__title text-[2rem]">
+    {title}
+  </h4>
+  <p class="project__description">
+    {description}
+  </p>
+  <p class="project__techStack">
+    {techStack}
+  </p>
+  <img src={imgSrc} alt="project image" />
+</div>
