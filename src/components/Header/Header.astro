@@ -1,6 +1,6 @@
 ---
 import Navbar from "@/components/Navbar/Navbar.astro";
-import Title from "@/components/Title/Title.astro";
+import NavbarTitle from "@/components/NavbarTitle/NavbarTitle.astro";
 import type { NavbarLinkProps } from "@/components/NavbarLink/NavbarLink.astro";
 
 export interface HeaderProps {
@@ -13,6 +13,6 @@ const { navbarLinks } = Astro.props as HeaderProps;
 <header
   class="header w-full h-fit z-[2] flex flex-col md:flex-row justify-around items-center flex-wrap py-2 px-4 fixed transition-all bg-dark-blue duration-1000 top-0 ease-in-out"
 >
-  <Title />
+  <NavbarTitle />
   <Navbar links={navbarLinks} />
 </header>
