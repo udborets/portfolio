@@ -3,10 +3,10 @@ import type { ProjectProps } from "../Project/Project.astro";
 import Project from "@/components/Project/Project.astro";
 
 export interface ProjectsProps {
-  projects: ProjectProps[];
+  children: ProjectProps[];
 }
 
-const { projects } = Astro.props as ProjectsProps;
+const { children: projects } = Astro.props as ProjectsProps;
 ---
 
 <section class="projects">
