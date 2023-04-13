@@ -2,10 +2,59 @@
 import Earth from "@/components/Earth/Earth";
 import Greeting from "@/components/Greeting/Greeting.astro";
 import Overview from "@/components/Overview/Overview.astro";
+import type { ProjectsProps } from "@/components/Projects/Projects.astro";
 import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
+import Projects from "@/components/Projects/Projects.astro";
 
 const layoutProps: LayoutProps = {
   title: "udborets",
+};
+
+const projects: ProjectsProps = {
+  projects: [
+    {
+      title: "Restaurant app - Punto Di Sapori",
+      description: `Frontend MPA restaurant landing page app. Built with Astro and React. Using React Hook Form for Email form.`,
+      imgSrc: "",
+      techStack: `Typescript, Astro, React, React Hook Form, TailwindCSS, SCSS`,
+      githubHref: "restaurant-app",
+      domainHref: "https://udborets-puntodisapori.vercel.app",
+    },
+    {
+      title: "Weather app - My Weather",
+      description: `Frontend SPA weather app which allows you to search city and get 
+      weather for the next five days by chosen city. Working with weather api. 
+      Build with NextJS 13 experimental app directory and api route. 
+      Handling queries with React Query and Axios. 
+      Getting cities info from MongoDB Database. Using Zustand as global state manager`,
+      imgSrc: "",
+      techStack: `Typescript, React, NextJS, TailwindCSS, SCSS, MongoDB, Axios, React Query`,
+      githubHref: "weather-app",
+      domainHref: "https://udborets-myweather.vercel.app",
+    },
+    {
+      title: "Online Gallery",
+      description: `Fullstack SPA gallery app which allows you to login by 
+      Email with Firebase authentication, create folders and upload 
+      photos to them, which will be saved in Firebase storage. 
+      Built with Vite React build on Frontend and Express NodeJS on Backend, connected with tRPC. 
+      Handling queries with React Query and saving user info in PostgreSQL database with Prisma`,
+      imgSrc: "",
+      techStack:
+        "Typescript, React, SCSS, React RTK, Firebase Authentication, Firebase Storage, React Router DOM, React Query, NodeJS, tRPC, Prisma, Zod",
+      githubHref: "online-gallery",
+    },
+    {
+      title: "Online Shop",
+      description: `Fullstack SPA shop app which allows to login as admin and create devices types and 
+      brands, and then devices with created types and brands, which will be saved in 
+      PostgreSQL database. Built with Vite React build on Frontend 
+      and Express NodeJS on Backend with authentication using JWT`,
+      imgSrc: "",
+      techStack: `Typescript, React, React RTK, React Router DOM, SCSS, Axios, Express, PostgreSQL, Sequelize`,
+      githubHref: "online-shop",
+    },
+  ],
 };
 ---
 
@@ -16,5 +65,6 @@ const layoutProps: LayoutProps = {
     <Greeting />
     <Earth client:load />
     <Overview />
+    <Projects {...projects} />
   </main>
 </Layout>
