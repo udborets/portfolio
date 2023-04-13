@@ -1,12 +1,17 @@
 ---
+import { GITHUB_URL } from "@/utils/consts";
+
 export interface ProjectProps {
   title: string;
   description: string;
   techStack: string;
   imgSrc: string;
+  githubHref: string;
+  domainHref?: string;
 }
 
-const { description, imgSrc, techStack, title } = Astro.props as ProjectProps;
+const { description, imgSrc, techStack, title, githubHref, domainHref } =
+  Astro.props as ProjectProps;
 ---
 
 <div class="project w-full h-fit">
@@ -19,5 +24,7 @@ const { description, imgSrc, techStack, title } = Astro.props as ProjectProps;
   <p class="project__techStack">
     {techStack}
   </p>
+  <a href={GITHUB_URL + githubHref}>github</a>
+  {domainHref ? <a href={domainHref}>domain</a> : ""}
   <img src={imgSrc} alt="project image" />
 </div>
