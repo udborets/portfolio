@@ -49,8 +49,8 @@ const navbarLinks: NavbarLinkProps[] = [
 <style is:global lang="css">
   @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 
-  .bg-dark-blue {
-    @apply bg-[#080216];
+  :root {
+    --dark-blue: #080216;
   }
 
   html,
@@ -64,7 +64,7 @@ const navbarLinks: NavbarLinkProps[] = [
   }
 
   html {
-    @apply bg-dark-blue;
+    @apply bg-[var(--dark-blue)];
     background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.781)),
       url("../../assets/main-bg.jpg");
     background-position: top center;
