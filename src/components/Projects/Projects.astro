@@ -10,6 +10,9 @@ const { projects } = Astro.props as ProjectsProps;
 ---
 
 <section class="projects w-full md:w-4/5 xl:w-3/5">
+  <h2 class="projects__title sectionTitle">
+    projects
+  </h2>
   <ul class="projects__list flex flex-col gap-8">
     {
       projects.map((props) => (
