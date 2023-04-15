@@ -10,17 +10,17 @@ const { title: documentTitle } = Astro.props as LayoutProps;
 const navbarLinks: NavbarLinkProps[] = [
   {
     hoverTitle: "go to home",
-    href: "#home",
+    href: "home",
     text: "home",
   },
   {
     hoverTitle: "go to about",
-    href: "#about",
+    href: "about",
     text: "about",
   },
   {
     hoverTitle: "go to projects",
-    href: "#projects",
+    href: "projects",
     text: "projects",
   },
 ];
@@ -82,13 +82,29 @@ const navbarLinks: NavbarLinkProps[] = [
   }
 </style>
 
-<!-- <script defer>
-  const a = document.getElementById("#about");
-  const ov = document.getElementById("overview");
-  a.onclick = () => {
+<script defer>
+  const home = document.getElementById("home");
+  const homeLink = document.getElementById("homeLink");
+  home.onclick = () => {
     scroll({
-      top: ov.getBoundingClientRect().top + window.scrollY - 100,
+      top: homeLink.getBoundingClientRect().top + window.scrollY - 100,
       behavior: "smooth",
     });
   };
-</script> -->
+  const about = document.getElementById("about");
+  const aboutLink = document.getElementById("aboutLink");
+  about.onclick = () => {
+    scroll({
+      top: aboutLink.getBoundingClientRect().top + window.scrollY - 100,
+      behavior: "smooth",
+    });
+  };
+  const projects = document.getElementById("projects");
+  const projectsLink = document.getElementById("projectsLink");
+  projects.onclick = () => {
+    scroll({
+      top: projectsLink.getBoundingClientRect().top + window.scrollY - 100,
+      behavior: "smooth",
+    });
+  };
+</script>
