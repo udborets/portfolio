@@ -8,10 +8,10 @@ export interface NavbarLinkProps {
 const { href, text, hoverTitle } = Astro.props as NavbarLinkProps;
 ---
 
-<span
+<button
   title={hoverTitle}
   id={href}
   class="navbarLink grid hover:cursor-pointer content-center rounded-[5px] text-[1.5rem] md:text-[1.8rem] stylishText font-bold px-2 py-1 text-white brightness-50 hover:brightness-100 duration-[0.8s] ease-out transition-all"
 >
   {text}
-</span>
+</button>
