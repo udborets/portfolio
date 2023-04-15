@@ -9,23 +9,47 @@ export interface ProjectProps {
   githubHref: string;
   domainHref?: string;
   domainName?: string;
+  imgPosition: "left" | "right";
 }
 
-const { description, imgSrc, techStack, title, githubHref, domainHref, domainName } =
-  Astro.props as ProjectProps;
+const {
+  description,
+  imgSrc,
+  techStack,
+  title,
+  githubHref,
+  domainHref,
+  domainName,
+  imgPosition,
+} = Astro.props as ProjectProps;
 ---
 
-<div class="project w-full h-fit">
-  <h4 class="project__title text-[2rem]">
-    {title}
-  </h4>
-  <p class="project__description">
-    {description}
-  </p>
-  <p class="project__techStack">
-    {techStack}
-  </p>
-  <a href={GITHUB_URL + githubHref}>github</a>
-  {domainHref ? <a href={domainHref}>{domainName}</a> : ""}
-  <img src={imgSrc} alt="project image" />
+<div class="project w-full h-fit flex lg:flex-row flex-col">
+  {
+    imgSrc && imgPosition === "left" ? (
+      <img src={imgSrc} alt="project image" class="w-full h-full" />
+    ) : (
+      ""
+    )
+  }
+  <div class="project__text flex flex-col w-fit">
+    <h4 class="project__title text-[2rem]">
+      {title}
+    </h4>
+    <p class="project__description">
+      {description}
+    </p>
+    <p class="project__techStack">
+      {techStack}
+    </p>
+    <a href={GITHUB_URL + githubHref}>GitHub repository</a>
+    {domainHref ? <a href={domainHref}>{domainName}</a> : ""}
+  </div>
+  {
+    imgSrc && imgPosition === "right" ? (
+      <img src={imgSrc} alt="project image" class="w-full h-full" />
+    ) : (
+      ""
+    )
+  }
 </div>
