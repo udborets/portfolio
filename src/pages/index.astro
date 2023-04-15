@@ -5,6 +5,9 @@ import Overview from "@/components/Overview/Overview.astro";
 import type { ProjectsProps } from "@/components/Projects/Projects.astro";
 import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
 import Projects from "@/components/Projects/Projects.astro";
+import onlineGalleryScreenshot from "@/assets/online-gallery-screenshot.png";
+import onlineShopScreenshot from "@/assets/online-shop-screenshot.png";
+import restaurantScreenshot from "@/assets/restaurant-screenshot.png";
 
 const layoutProps: LayoutProps = {
   title: "udborets",
@@ -15,11 +18,12 @@ const projects: ProjectsProps = {
     {
       title: "Restaurant app - Punto Di Sapori",
       description: `Frontend MPA restaurant landing page app. Built with Astro and React. Using React Hook Form for Feedback form.`,
-      imgSrc: "",
+      imgSrc: restaurantScreenshot,
       techStack: `Typescript, Astro, React, React Hook Form, TailwindCSS, SCSS`,
       githubHref: "restaurant-app",
       domainHref: "https://udborets-puntodisapori.vercel.app",
       domainName: "Punto Di Sapori",
+      imgPosition: 'right'
     },
     {
       title: "Weather app - My Weather",
@@ -33,6 +37,7 @@ const projects: ProjectsProps = {
       githubHref: "weather-app",
       domainHref: "https://udborets-myweather.vercel.app",
       domainName: "My Weather",
+      imgPosition: 'left'
     },
     {
       title: "Online Gallery",
@@ -41,10 +46,11 @@ const projects: ProjectsProps = {
       photos to them, that twill be saved in Firebase storage. 
       Built with Vite React build on Frontend and Express NodeJS on Backend, connected with tRPC and  
       handles queries with React Query and saving user info in PostgreSQL database with Prisma`,
-      imgSrc: "",
+      imgSrc: onlineGalleryScreenshot,
       techStack:
         "Typescript, React, SCSS, React RTK, Firebase Authentication, Firebase Storage, React Router DOM, React Query, NodeJS, tRPC, Prisma, Zod",
       githubHref: "online-gallery",
+      imgPosition: 'right'
     },
     {
       title: "Online Shop",
@@ -52,9 +58,10 @@ const projects: ProjectsProps = {
       creating product catalog with custom product types and brands and other product attributes, which are saved in 
       PostgreSQL database. This project is built with Vite React build on Frontend 
       and Express NodeJS on Backend with authentication using JWT`,
-      imgSrc: "",
+      imgSrc: onlineShopScreenshot,
       techStack: `Typescript, React, React RTK, React Router DOM, SCSS, Axios, Express, PostgreSQL, Sequelize`,
       githubHref: "online-shop",
+      imgPosition: 'left'
     },
   ],
 };
