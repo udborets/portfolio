@@ -1,7 +1,7 @@
 ---
 import Earth from "@/components/Earth/Earth";
 import Greeting from "@/components/Greeting/Greeting.astro";
-import Overview from "@/components/Overview/Overview.astro";
+import About from "@/components/About/About.astro";
 import type { ProjectsProps } from "@/components/Projects/Projects.astro";
 import Layout, { LayoutProps } from "@/layouts/Layout/Layout.astro";
 import Projects from "@/components/Projects/Projects.astro";
@@ -69,7 +69,7 @@ const projects: ProjectsProps = {
   >
     <Greeting />
     <Earth client:load />
-    <Overview />
+    <About />
     <Projects {...projects} />
   </main>
 </Layout>
