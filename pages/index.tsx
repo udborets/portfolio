@@ -8,9 +8,7 @@ const HomePage = () => {
           Yury Borets
         </title>
       </Head>
-      <main
-        className="HomePage w-full h-full bg-main theme-transition"
-      >
+      <main className="HomePage w-full h-full bg-main theme-transition">
       </main>
     </>
   )
