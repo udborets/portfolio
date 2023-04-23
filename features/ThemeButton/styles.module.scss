@@ -1,8 +1,7 @@
 .ThemeButton {
   appearance: none;
-  width: 30px;
-  height: 30px;
   background: white;
+
   &:checked {
     background: black;
   }
