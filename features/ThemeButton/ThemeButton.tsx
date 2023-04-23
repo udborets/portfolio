@@ -5,7 +5,7 @@ const ThemeButton = () => {
   const [theme, setTheme] = useLocalStorage({ key: 'theme', initValue: ThemeColors.DARK });
   return (
     <input
-      className="ThemeButton bg-inverse absolute appearance-none hover:cursor-pointer right-[5px] top-[5px] theme-transition rounded-[10px] w-[20px] h-[20px]"
+      className="ThemeButton bg-inverse fixed appearance-none hover:cursor-pointer right-[10px] top-[10px] theme-transition rounded-[10px] w-[20px] h-[20px]"
       id="theme-button"
       type="checkbox"
       checked={theme === ThemeColors.LIGHT}
