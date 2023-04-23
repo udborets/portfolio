@@ -14,6 +14,10 @@
   .text-main {
     @apply text-[var(--text-main)] theme-transition;
   }
+
+  .bg-inverse {
+    @apply bg-[var(--bg-inverse)];
+  }
 }
 
 html {
@@ -30,10 +34,12 @@ body,
 
 :root {
   --bg-main: black;
+  --bg-inverse: white;
   --text-main: white;
 
   &:has(#theme-button:checked) {
     --bg-main: white;
+    --bg-inverse: black;
     --text-main: black;
   }
 }
