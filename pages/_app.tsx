@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
+import ThemeButton from '@/features/ThemeButton/ThemeButton';
 import '@/styles/global.scss';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Component {...pageProps} />
+      <ThemeButton />
     </>
   )
 }

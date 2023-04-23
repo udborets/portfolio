@@ -1,7 +1,5 @@
 import Head from "next/head";
 
-import ThemeButton from "@/features/ThemeButton/ThemeButton";
-
 const HomePage = () => {
   return (
     <>
@@ -13,7 +11,6 @@ const HomePage = () => {
       <main
         className="HomePage w-full h-full bg-main theme-transition"
       >
-        <ThemeButton />
       </main>
     </>
   )
