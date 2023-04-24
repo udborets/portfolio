@@ -9,20 +9,21 @@ const HomePage = () => {
     skills:
       [
         {
-          list: ["React", "NextJS", "tRPC"],
-          fieldName: "Frontend"
+          list: ["React", "NextJS", "TypeScript", "Redux Toolkit", "SCSS", "Styled Components",
+            "TailwindCSS", "tRPC", "Zustand", "React Query", "Axios", "React Hook Form", "React Router DOM", ""],
+          fieldName: "Frontend",
         },
         {
-          list: ["NodeJS", "Express", "tRPC"],
-          fieldName: "Backend"
+          list: ["NodeJS", "TypeScript", "Express", "tRPC"],
+          fieldName: "Backend",
         },
         {
           list: ['PostgreSQL', "MongoDB"],
-          fieldName: "Databases"
+          fieldName: "Databases",
         },
         {
           list: ['Python', "Go"],
-          fieldName: "Other"
+          fieldName: "Other",
         },
       ]
   }
