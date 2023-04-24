@@ -10,15 +10,15 @@ const HomePage = () => {
       [
         {
           list: ["React", "NextJS", "TypeScript", "Redux Toolkit", "SCSS", "Styled Components",
-            "TailwindCSS", "tRPC", "Zustand", "React Query", "Axios", "React Hook Form", "React Router DOM", ""],
+            "TailwindCSS", "tRPC", "Zustand", "React Router DOM", "Astro", "React Query", "Axios", "React Hook Form", "Framer Motion"],
           fieldName: "Frontend",
         },
         {
-          list: ["NodeJS", "TypeScript", "Express", "tRPC"],
+          list: ["NodeJS", "ExpressJS", "tRPC"],
           fieldName: "Backend",
         },
         {
-          list: ['PostgreSQL', "MongoDB"],
+          list: ['PostgreSQL', "MongoDB", "Prisma ORM"],
           fieldName: "Databases",
         },
         {
