@@ -1,23 +1,16 @@
-import { ISkillsListProps } from "./models"
+import { ISkillsListProps } from "./models";
 
 const SkillsList = ({ fieldName, list }: ISkillsListProps) => {
   return (
-    <div className="SkillsList flex flex-col items-start text-[2rem] justify-center gap-8">
-      <h4 className="SkillsList__name font-bold">
+    <div className="SkillsList flex flex-col w-full sm:w-1/2 items-start justify-center">
+      <h4 className="SkillsList__name font-[600] text-[2rem]">
         {fieldName}
       </h4>
-      <ul className="SkillList__list flex flex-col">
-        {list.map((skill) => (
-          <li
-            className="SkillList__item text-[1.2rem]"
-            key={skill}
-          >
-            {skill}
-          </li>
-        ))}
-      </ul>
+      <p className=" text-[1.4rem]">
+        {list.join(', ')}
+      </p>
     </div>
   )
 }
 
-export default SkillsList
+export default SkillsList;
