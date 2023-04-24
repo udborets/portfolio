@@ -1,12 +1,15 @@
 import { IFieldSelectProps } from "./models";
 
-const FieldSelect = ({ fields, selectFieldFunction }: IFieldSelectProps) => {
+const FieldSelect = ({ fields, selectFieldFunction, selectedField }: IFieldSelectProps) => {
   return (
-    <ul className="FieldSelect flex flex-col justify-center gap-2 text-[1.3rem] sm:text-[1.7rem]">
+    <ul className="FieldSelect flex flex-row flex-wrap sm:flex-col font-[600] justify-center gap-2 sm:gap-8 text-[1.3rem] sm:text-[2rem]">
       {fields.map((fieldName) => (
-        <li key={fieldName} className="FieldSelect__item">
+        <li key={fieldName}>
           <button
-            className="FieldSelect__button"
+            className={`FieldSelect__item duration-500  sm:py-3 sm:px-4 opacity-50 hover:opacity-100 
+            ${selectedField === fieldName
+                ? "hover:opacity-100 opacity-100"
+                : "hover:opacity-80"}`}
             onClick={() => selectFieldFunction(fieldName)}
           >
             {fieldName}
