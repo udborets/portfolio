@@ -1,9 +1,31 @@
 import Head from "next/head";
 
-import SectionContainer from "@/features/SectionContainer/SectionContainer";
-import { outfit } from "@/fonts";
+import SkillsSection from "@/features/HomePageSections/SkillsSection/SkillsSection";
+import MainSection from "@/features/HomePageSections/MainSection/MainSection";
+import { ISkillsSectionProps } from "@/features/HomePageSections/SkillsSection/models";
 
 const HomePage = () => {
+  const skillsSectionProps: ISkillsSectionProps = {
+    skills:
+      [
+        {
+          list: ["React", "NextJS", "tRPC"],
+          fieldName: "Frontend"
+        },
+        {
+          list: ["NodeJS", "Express", "tRPC"],
+          fieldName: "Backend"
+        },
+        {
+          list: ['PostgreSQL', "MongoDB"],
+          fieldName: "Databases"
+        },
+        {
+          list: ['Python', "Go"],
+          fieldName: "Other"
+        },
+      ]
+  }
   return (
     <>
       <Head>
@@ -12,14 +34,8 @@ const HomePage = () => {
         </title>
       </Head>
       <main className="HomePage h-fit flex flex-col flex-grow justify-center items-center">
-        <SectionContainer className="Main flex flex-col justify-center items-center">
-          <h1 className={`Main__title font-bold text-main text-center text-[2.8rem] sm:text-[5rem] w-fit ${outfit.className}`}>
-            Yury Borets
-          </h1>
-          <h2 className={`Main__subtitle font-bold text-main inline text-center text-[1.8rem] w-fit sm:text-[3.5rem] ${outfit.className}`}>
-            Frontend Developer
-          </h2>
-        </SectionContainer>
+        <MainSection />
+        <SkillsSection {...skillsSectionProps} />
       </main>
     </>
   )
