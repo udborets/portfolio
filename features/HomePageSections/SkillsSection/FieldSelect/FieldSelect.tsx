@@ -6,10 +6,10 @@ const FieldSelect = ({ fields, selectFieldFunction, selectedField }: IFieldSelec
       {fields.map((fieldName) => (
         <li key={fieldName}>
           <button
-            className={`FieldSelect__item duration-500  sm:py-3 sm:px-4 opacity-50 hover:opacity-100 
+            className={`FieldSelect__item duration-500 sm:py-3 sm:px-4 opacity-50
             ${selectedField === fieldName
-                ? "hover:opacity-100 opacity-100"
-                : "hover:opacity-80"}`}
+                ? " opacity-100"
+                : " hover:opacity-80"}`}
             onClick={() => selectFieldFunction(fieldName)}
           >
             {fieldName}
