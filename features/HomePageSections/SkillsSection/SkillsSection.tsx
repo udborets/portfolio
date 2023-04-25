@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import SectionContainer from "../../SectionContainer/SectionContainer";
+import SectionContainer from "@/features/SectionContainer/SectionContainer";
 import FieldSelect from "./FieldSelect/FieldSelect";
 import SkillsList from "./SkillsList/SkillsList";
 import { ISkillsSectionProps } from "./models";
@@ -12,7 +12,7 @@ const SkillsSection = ({ skills }: ISkillsSectionProps) => {
       <h2 className={`SkillsSection__title font-bold text-main inline text-center text-[2rem] w-fit sm:text-[3.5rem] }`}>
         My skills
       </h2>
-      <div className="SkillsSection__body flex w-5/6 sm:h-3/5 flex-col sm:flex-row items-center justify-evenly sm:justify-between gap-8">
+      <div className="SkillsSection__body flex w-5/6 h-5/6 sm:h-4/5 flex-col sm:flex-row items-center justify-evenly sm:justify-between sm:gap-8">
         <FieldSelect
           selectFieldFunction={setChosenField}
           selectedField={chosenField}
