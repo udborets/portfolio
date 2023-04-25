@@ -1,8 +1,10 @@
 import Head from "next/head";
 
-import SkillsSection from "@/features/HomePageSections/SkillsSection/SkillsSection";
 import MainSection from "@/features/HomePageSections/MainSection/MainSection";
+import SkillsSection from "@/features/HomePageSections/SkillsSection/SkillsSection";
 import { ISkillsSectionProps } from "@/features/HomePageSections/SkillsSection/models";
+
+import styles from "./styles.module.scss";
 
 const HomePage = () => {
   const skillsSectionProps: ISkillsSectionProps = {
@@ -34,7 +36,7 @@ const HomePage = () => {
           Yury Borets
         </title>
       </Head>
-      <main className="HomePage h-fit flex flex-col flex-grow justify-center items-center">
+      <main className={`${styles.HomePage} h-screen min-h-screen flex flex-col flex-grow justify-start items-center snap-y snap-mandatory overflow-y-scroll`}>
         <MainSection />
         <SkillsSection {...skillsSectionProps} />
       </main>
