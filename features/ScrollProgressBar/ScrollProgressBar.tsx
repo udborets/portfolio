@@ -2,7 +2,6 @@ import { motion, useScroll } from "framer-motion";
 
 const ScrollProgressBar = () => {
   const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress)
   return (
     <motion.div
       style={{ scaleX: scrollYProgress }}
