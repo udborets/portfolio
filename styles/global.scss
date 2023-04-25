@@ -16,7 +16,7 @@
   }
 
   .bg-inverse {
-    @apply bg-[var(--bg-inverse)];
+    @apply bg-[var(--bg-inverse)] theme-transition;
   }
 }
 
@@ -51,21 +51,4 @@ body,
 
 html {
   background: var(--bg-main);
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: var(--bg-inverse);
-
-  &:hover {
-    background: rgb(165, 165, 165);
-  }
-
-  &:active {
-    background: var(--bg-inverse);
-  }
 }
