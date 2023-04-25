@@ -1,0 +1,16 @@
+.HomePage::-webkit-scrollbar {
+  width: 10px;
+}
+
+.HomePage::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--bg-inverse);
+
+  &:hover {
+    background: rgb(165, 165, 165);
+  }
+
+  &:active {
+    background: var(--bg-inverse);
+  }
+}
