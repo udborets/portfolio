@@ -1,15 +1,19 @@
 FROM node
 
+RUN npm install -g npm@8.5.5
+
+RUN mkdir -p /app
+
 WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json /app
 
-RUN npm install
+RUN npm i
 
-RUN npm build
+COPY . /app
 
-COPY . .
+EXPOSE 3000
 
-EXPOSE 5000
+RUN npm run build
 
 CMD ["npm", "run", "start"]
