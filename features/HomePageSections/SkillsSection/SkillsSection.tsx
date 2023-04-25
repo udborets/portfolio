@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import SectionContainer from "../SectionContainer/SectionContainer";
+import SectionContainer from "../../SectionContainer/SectionContainer";
 import FieldSelect from "./FieldSelect/FieldSelect";
 import SkillsList from "./SkillsList/SkillsList";
 import { ISkillsSectionProps } from "./models";
