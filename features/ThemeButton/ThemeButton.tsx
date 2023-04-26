@@ -15,9 +15,8 @@ const ThemeButton = () => {
     >
       <input
         className={`ThemeButton__input bg-main appearance-none hover:cursor-pointer rounded w-3/5 h-3/5 transition-all duration-300 ${isHovered
-          ? 'rounded-[10px]'
-          : 'rounded-[50%]'}`}
-
+          ? 'rounded-[50%]'
+          : 'rounded-[5px]'}`}
         id="theme-button"
         type="checkbox"
         checked={theme === ThemeColors.LIGHT}
