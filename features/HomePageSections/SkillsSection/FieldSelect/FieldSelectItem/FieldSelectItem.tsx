@@ -4,17 +4,17 @@ import { useRef } from "react";
 import { IFieldSelectItemProps } from "../models";
 
 const FieldSelectItem = ({ fieldName, index, selectedField, selectFieldFunction }: IFieldSelectItemProps) => {
-  const itemRef = useRef<HTMLLIElement>(null)
-  const isInView = useInView(itemRef, { once: true })
+  const itemRef = useRef<HTMLLIElement>(null);
+  const isInView = useInView(itemRef, { once: true });
   return (
     <motion.li
       key={fieldName}
       initial={{
-        translateX: "-100%",
+        translateX: "-50%",
         opacity: 0,
       }}
       animate={{
-        translateX: isInView ? "0" : "-100%",
+        translateX: isInView ? "0" : "-50%",
         opacity: isInView ? 1 : 0,
       }}
       transition={{ ease: "easeOut", duration: 1, delay: index * 0.3 }}
