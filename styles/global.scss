@@ -53,11 +53,11 @@ html {
   background: var(--bg-main);
 }
 
-html::-webkit-scrollbar {
+.scrollContainer::-webkit-scrollbar {
   width: 10px;
 }
 
-html::-webkit-scrollbar-thumb {
+.scrollContainer::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: var(--bg-inverse);
 
