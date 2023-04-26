@@ -39,7 +39,7 @@ const HomePage = () => {
           Yury Borets
         </title>
       </Head>
-      <main ref={scrollContainerRef} className={`HomePage flex flex-col flex-grow justify-start overflow-y-scroll snap-y snap-mandatory scroll-smooth h-screen min-h-screen items-center`}>
+      <main ref={scrollContainerRef} className={`HomePage flex flex-col flex-grow scrollContainer justify-start overflow-y-scroll snap-y snap-mandatory scroll-smooth h-screen min-h-screen items-center`}>
         <MainSection />
         <AboutSection />
         <SkillsSection {...skillsSectionProps} />
