@@ -3,3 +3,8 @@ export type IFieldSelectProps = {
   selectFieldFunction: (field: string) => void;
   selectedField: string;
 };
+
+export type IFieldSelectItemProps = Omit<IFieldSelectProps, "fields"> & {
+  index: number;
+  fieldName: string;
+};
