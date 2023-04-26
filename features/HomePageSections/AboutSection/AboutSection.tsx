@@ -1,4 +1,4 @@
-import SectionContainer from "@/features/SectionContainer/SectionContainer"
+import SectionContainer from "@/features/HomePageSections/SectionContainer/SectionContainer"
 
 const AboutSection = () => {
   return (

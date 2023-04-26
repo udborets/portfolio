@@ -1,4 +1,4 @@
-import SectionContainer from "../../SectionContainer/SectionContainer";
+import SectionContainer from "../SectionContainer/SectionContainer";
 
 const MainSection = () => {
   return (
