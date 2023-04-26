@@ -3,6 +3,7 @@ import Head from "next/head";
 import MainSection from "@/features/HomePageSections/MainSection/MainSection";
 import SkillsSection from "@/features/HomePageSections/SkillsSection/SkillsSection";
 import { ISkillsSectionProps } from "@/features/HomePageSections/SkillsSection/models";
+import AboutSection from "@/features/HomePageSections/AboutSection/AboutSection";
 
 const skillsSectionProps: ISkillsSectionProps = {
   skills:
@@ -37,6 +38,7 @@ const HomePage = () => {
       </Head>
       <main className={`HomePage flex flex-col flex-grow justify-start items-center`}>
         <MainSection />
+        <AboutSection />
         <SkillsSection {...skillsSectionProps} />
       </main>
     </>
