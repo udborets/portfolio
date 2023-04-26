@@ -4,7 +4,7 @@
 
 @layer components {
   .theme-transition {
-    @apply transition-colors duration-500 ease-out;
+    @apply transition-all duration-500 ease-out;
   }
 
   .bg-main {
