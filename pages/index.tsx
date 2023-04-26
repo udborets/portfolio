@@ -1,9 +1,11 @@
 import Head from "next/head";
+import { useRef } from "react";
 
+import AboutSection from "@/features/HomePageSections/AboutSection/AboutSection";
 import MainSection from "@/features/HomePageSections/MainSection/MainSection";
 import SkillsSection from "@/features/HomePageSections/SkillsSection/SkillsSection";
 import { ISkillsSectionProps } from "@/features/HomePageSections/SkillsSection/models";
-import AboutSection from "@/features/HomePageSections/AboutSection/AboutSection";
+import ScrollProgressBar from "@/features/ScrollProgressBar/ScrollProgressBar";
 
 const skillsSectionProps: ISkillsSectionProps = {
   skills:
@@ -29,6 +31,7 @@ const skillsSectionProps: ISkillsSectionProps = {
 }
 
 const HomePage = () => {
+  const scrollContainerRef = useRef<HTMLElement>(null);
   return (
     <>
       <Head>
@@ -36,11 +39,12 @@ const HomePage = () => {
           Yury Borets
         </title>
       </Head>
-      <main className={`HomePage flex flex-col flex-grow justify-start items-center`}>
+      <main ref={scrollContainerRef} className={`HomePage flex flex-col flex-grow justify-start overflow-y-scroll snap-y snap-mandatory scroll-smooth h-screen min-h-screen items-center`}>
         <MainSection />
         <AboutSection />
         <SkillsSection {...skillsSectionProps} />
       </main>
+      <ScrollProgressBar containerRef={scrollContainerRef} />
     </>
   )
 }
