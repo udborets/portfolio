@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import ScrollProgressBar from '@/features/ScrollProgressBar/ScrollProgressBar';
 import ThemeButton from '@/features/ThemeButton/ThemeButton';
 
 import '@/styles/global.scss';
