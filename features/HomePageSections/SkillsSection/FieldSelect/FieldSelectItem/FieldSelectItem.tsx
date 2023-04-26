@@ -21,7 +21,7 @@ const FieldSelectItem = ({ fieldName, index, selectedField, selectFieldFunction 
       ref={itemRef}
     >
       <button
-        className={`FieldSelect__button duration-500 sm:py-3 sm:px-4 ${selectedField === fieldName
+        className={`FieldSelect__button text-main sm:py-3 sm:px-4 ${selectedField === fieldName
           ? "opacity-100"
           : "opacity-40 hover:opacity-70"}`}
         onClick={() => selectFieldFunction(fieldName)}
