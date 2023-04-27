@@ -2,12 +2,14 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 import { IFieldSelectItemProps } from "../models";
+import styles from './styles.module.scss';
 
 const FieldSelectItem = ({ fieldName, index, selectedField, selectFieldFunction }: IFieldSelectItemProps) => {
   const itemRef = useRef<HTMLLIElement>(null);
   const isInView = useInView(itemRef, { once: true });
   return (
     <motion.li
+      className="w-fit h-fit"
       key={fieldName}
       initial={{
         translateX: "-50%",
@@ -21,7 +23,7 @@ const FieldSelectItem = ({ fieldName, index, selectedField, selectFieldFunction 
       ref={itemRef}
     >
       <button
-        className={`FieldSelect__button text-main sm:py-3 sm:px-4 ${selectedField === fieldName
+        className={`${styles.FieldSelectItem} text-main sm:py-3 sm:px-4 ${selectedField === fieldName
           ? "opacity-100"
           : "opacity-40 hover:opacity-70"}`}
         onClick={() => selectFieldFunction(fieldName)}
