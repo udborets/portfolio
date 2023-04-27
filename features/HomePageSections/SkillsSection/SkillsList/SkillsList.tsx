@@ -5,7 +5,7 @@ import { ISkillsListProps } from "./models";
 const SkillsList = ({ fieldName, list }: ISkillsListProps) => {
   return (
     <motion.div
-      className="SkillsList flex flex-col w-full h-fit sm:w-1/2 items-start justify-start"
+      className="SkillsList flex flex-col w-full h-fit min-h-[130px] sm:w-1/2 items-start justify-start"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
