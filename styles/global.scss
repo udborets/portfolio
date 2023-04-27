@@ -53,19 +53,21 @@ html {
   background: var(--bg-main);
 }
 
-.scrollContainer::-webkit-scrollbar {
-  width: 10px;
-}
-
-.scrollContainer::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: var(--bg-inverse);
-
-  &:hover {
-    background: rgb(165, 165, 165);
+@media (min-width: 640px) {
+  .scrollContainer::-webkit-scrollbar {
+    width: 10px;
   }
 
-  &:active {
+  .scrollContainer::-webkit-scrollbar-thumb {
+    border-radius: 8px;
     background: var(--bg-inverse);
+
+    &:hover {
+      background: rgb(165, 165, 165);
+    }
+
+    &:active {
+      background: var(--bg-inverse);
+    }
   }
 }
