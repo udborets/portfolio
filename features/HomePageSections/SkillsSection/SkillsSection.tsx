@@ -12,7 +12,7 @@ const SkillsSection = ({ skills }: ISkillsSectionProps) => {
       <h2 className={`SkillsSection__title font-bold text-main inline text-center text-[2rem] w-fit sm:text-[3.5rem] }`}>
         My skills
       </h2>
-      <div className="SkillsSection__body flex w-5/6 h-5/6 sm:h-4/5 flex-col-reverse sm:flex-row items-center justify-evenly sm:justify-between sm:gap-8">
+      <div className="SkillsSection__body flex w-5/6 h-4/6 sm:h-4/5 flex-col-reverse sm:flex-row items-center justify-evenly sm:justify-between sm:gap-8">
         <FieldSelect
           selectFieldFunction={setChosenField}
           selectedField={chosenField}
