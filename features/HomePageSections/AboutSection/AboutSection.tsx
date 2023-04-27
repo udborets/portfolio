@@ -2,9 +2,9 @@ import SectionContainer from "@/features/HomePageSections/SectionContainer/Secti
 
 const AboutSection = () => {
   return (
-    <SectionContainer className="AboutSection">
-      <p>
-        I&apos;m a frontend developer 
+    <SectionContainer className="AboutSection flex flex-col text-[1.5rem] sm:text-[3rem] justify-center items-center">
+      <p className="text-center ">
+        I create web applications with React, NextJS and TypeScript
       </p>
     </SectionContainer>
   )
