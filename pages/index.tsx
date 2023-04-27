@@ -11,8 +11,7 @@ const skillsSectionProps: ISkillsSectionProps = {
   skills:
     [
       {
-        list: ["React", "NextJS", "TypeScript", "Redux Toolkit", "SCSS", "Styled Components",
-          "TailwindCSS", "tRPC", "Zustand", "React Router DOM", "Astro", "React Query", "Axios", "React Hook Form", "Framer Motion"],
+        list: ["React", "NextJS", "TypeScript", "Redux Toolkit"],
         fieldName: "Frontend",
       },
       {
@@ -41,7 +40,7 @@ const HomePage = () => {
       </Head>
       <main ref={scrollContainerRef} className={`HomePage flex flex-col flex-grow scrollContainer justify-start overflow-y-scroll snap-y snap-mandatory scroll-smooth h-screen min-h-screen items-center`}>
         <MainSection />
-        {/* <AboutSection /> */}
+        <AboutSection />
         <SkillsSection {...skillsSectionProps} />
       </main>
       <ScrollProgressBar containerRef={scrollContainerRef} />
