@@ -11,7 +11,7 @@ const skillsSectionProps: ISkillsSectionProps = {
   skills:
     [
       {
-        list: ["React", "NextJS", "TypeScript", "Redux Toolkit"],
+        list: ["React", "NextJS", "TypeScript", "Redux Toolkit", "SCSS"],
         fieldName: "Frontend",
       },
       {
