@@ -1,6 +1,8 @@
+import { FC } from "react";
+
 import PageLayout from "@/layouts/PageLayout/PageLayout";
 
-const HomePage = () => {
+const HomePage: FC = () => {
   return (
     <PageLayout title="Yury Borets">
       <main className="home-page">
