@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .link {
+    @apply text-[var(--link-main)] hover:text-[var(--link-hover)] 
+    active:text-[var(--link-active)] duration-200 transition-colors ease-out;
+  }
+
+  .text-main {
+    @apply text-[var(--text-main)];
+  }
+}
+
 :root {
+  --text-main: black;
+  --bg-main: white;
+  --link-main: rgb(0, 223, 223);
+  --link-hover: rgb(0, 177, 177);
+  --link-active: rgb(0, 131, 131);
 }
 
 html,
@@ -15,4 +31,8 @@ body,
 #__next {
   display: flex;
   flex-direction: column;
+}
+
+html {
+  background: var(--bg-main);
 }
