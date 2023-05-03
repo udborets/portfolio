@@ -11,14 +11,19 @@
   .text-main {
     @apply text-[var(--text-main)];
   }
+
+  .text-blue {
+    @apply text-[var(--text-blue)];
+  }
 }
 
 :root {
-  --text-main: black;
-  --bg-main: white;
+  --text-main: rgb(213, 213, 213);
+  --bg-main: rgb(21, 21, 21);
+  --text-blue: rgb(0, 223, 223);
   --link-main: rgb(0, 223, 223);
-  --link-hover: rgb(0, 177, 177);
-  --link-active: rgb(0, 131, 131);
+  --link-hover: rgb(0, 132, 132);
+  --link-active: rgb(0, 79, 79);
 }
 
 html,
