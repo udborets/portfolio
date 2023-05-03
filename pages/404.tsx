@@ -3,22 +3,22 @@ import { FC } from 'react';
 
 import { robotoMono } from '@/fonts';
 import PageLayout from '@/layouts/PageLayout/PageLayout';
-import styles from './404.module.scss';
+import styles from './not-found.module.scss';
 
 const NotFoundPage: FC = () => {
   return (
     <PageLayout title="Not found">
-      <main className={`${styles["not-found-page"]}`}>
-        <div className={`${styles["not-found-page__content"]} ${robotoMono.className}`}>
-          <h1 className={`${styles["not-found-page__404"]}`}>
+      <main className={`${styles["not-found-page"]} ${robotoMono.className}`}>
+        <div className={`${styles["content"]}`}>
+          <h1 className={`${styles["error-code"]}`}>
             404
           </h1>
-          <p className={`${styles["not-found-page__message"]}`}>
+          <p className={`${styles["message"]}`}>
             Page not found
           </p>
           <Link
             href="/"
-            className={`${styles["not-found-page__go-home-link"]}`}
+            className={`${styles["go-home-link"]}`}
           >
             Go home?
           </Link>
