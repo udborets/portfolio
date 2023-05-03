@@ -1,0 +1,16 @@
+.home-page {
+  @apply text-main w-full h-full flex flex-col;
+}
+
+.name {
+  @apply text-[6rem] text-blue w-fit font-bold;
+}
+
+.pre-name,
+.post-name {
+  @apply text-[4rem] w-fit;
+}
+
+.greeting {
+  @apply flex flex-col gap-4 w-fit h-fit;
+}
